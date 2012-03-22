@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -rf ~/.m2/repository/org/sakaiproject/nakamura ~/.m2/repository/edu/berkeley
+
+
+

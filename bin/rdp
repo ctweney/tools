@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mvn -P redeploy clean install $@
+
+

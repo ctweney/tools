@@ -1,0 +1,12 @@
+#/bin/bash
+
+if [ -z "$1" ]; then
+	echo "Usage: $0 commit_message"
+	exit
+fi
+
+MESSAGE="$@"
+
+git commit -a -m "$MESSAGE"
+git push
+

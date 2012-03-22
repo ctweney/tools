@@ -1,0 +1,15 @@
+#!/bin/bash
+
+DIRECTORY=`pwd`
+MVN_OPTS="$@"
+
+echo "Doing clean install for all projects in $DIRECTORY, Maven options: $MVN_OPTS"
+
+cd 3akai-ux && mvn $MVN_OPTS clean install
+cd ../sparsemapcontent && mvn $MVN_OPTS clean install
+cd ../solr && mvn $MVN_OPTS clean install
+cd ../nakamura && mvn $MVN_OPTS -P build,bundle clean install 
+
+echo "All projects built successfully!"
+
+

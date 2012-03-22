@@ -1,0 +1,14 @@
+create search node:
+
+curl -u admin:admin -F"jcr:primaryType=nt:unstructured" -Ftitle="task search" http://localhost:8080/var/message/notice/tasks
+
+unclear at this point how to post json to existing node. ask ray. 
+
+to redeploy notices bundle:
+
+cd ~/dev/0.2/myberkeley/notices 
+mvn -P redeploy -Dsling.url=http://localhost:8080/system/console -Dsling.user=admin -Dsling.password=admin install
+
+query for events with working date:
+http://localhost:8080/var/message/notice/events.json?sortOn=sakai:eventDate&sortOrder=ascending&_=1294768241607&startDate=2011-03-26T00:00:00.000-08:00
+

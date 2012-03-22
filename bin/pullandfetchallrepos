@@ -1,0 +1,30 @@
+#!/bin/bash
+
+DIRECTORY=$1
+
+if [ -z "$1" ]; then
+	DIRECTORY=~/merge/0.2
+fi
+
+cd $DIRECTORY
+
+echo "Pulling and Fetching all repos in `pwd`"
+
+echo "Getting nakamura....."
+cd nakamura && git fetch --all && git pull
+
+echo
+echo "----------------------------------------------------------------"
+echo "Getting 3akai-ux....."
+cd ../3akai-ux && git fetch --all && git pull
+
+echo
+echo "----------------------------------------------------------------"
+echo "Getting myberkeley....."
+cd ../myberkeley && git fetch --all && git pull
+
+echo
+echo "----------------------------------------------------------------"
+echo "Getting sparsemapcontent....."
+cd ../sparsemapcontent && git fetch --all && git pull
+

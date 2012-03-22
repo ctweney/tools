@@ -1,0 +1,9 @@
+create a group, id of "borg":
+curl -u admin:admin http://localhost:8080/system/userManager/group.create.json -F ":name=borg" -e http://localhost:8080/
+
+assimilate 904715 to the borg:
+curl -u admin:admin http://localhost:8080/system/userManager/group/borg.update.html -F ":member=904715" -e http://localhost:8080/
+
+
+
+

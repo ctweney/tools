@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -f working/sling/logs/error.lo*
+mvn -Dsling.purge clean
+mvn -o -P runner -Dsling.start verify
+

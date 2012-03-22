@@ -1,0 +1,138 @@
+curl -u 904715:testuser http://localhost:8080/~904715/private/dynamic_lists
+
+curl -u 904715:testuser -F operation=import -F contentType=json -F content={"lists":{"__array__0__":{"sakai:id":"dl-904715-1288636517379","sakai:name":"testlistname","sakai:description":"testlistdesc","sakai:dateModified":"2010-11-01T18:35:17.379Z","sakai:dateModified@TypeHint":"date","sakai:modifiedBy":"904715","query":{"context":{"__array__0__":"g-ced-students"},"standing":{"__array__0__":"undergrad"},"major":{"__array__0__":"CITY REGIONAL PLAN"}}}}} -F replace=true -F replaceProperties=true http://localhost:8080/~904715/private/dynamic_lists
+
+response from this:
+
+<html>
+<head>
+    <title>Content created /_user/9/90/904715/private/dynamic_lists</title>
+</head>
+    <body>
+    <h1>Content created /_user/9/90/904715/private/dynamic_lists</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>Status</td>
+                <td><div id="Status">201</div></td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td><div id="Message">Created</div></td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td><a href="/_user/9/90/904715/private/dynamic_lists" id="Location">/_user/9/90/904715/private/dynamic_lists</a></td>
+            </tr>
+            <tr>
+                <td>Parent Location</td>
+                <td><a href="/_user/9/90/904715/private" id="ParentLocation">/_user/9/90/904715/private</a></td>
+            </tr>
+            <tr>
+                <td>Path</td>
+                <td><div id="Path">/_user/9/90/904715/private/dynamic_lists</div></td>
+            </tr>
+            <tr>
+                <td>Referer</td>
+                <td><a href="" id="Referer"></a></td>
+            </tr>
+            <tr>
+                <td>ChangeLog</td>
+                <td><div id="ChangeLog"><pre>created("/_user/9/90/904715/private/dynamic_lists");<br/>modified("/_user/9/90/904715/private/dynamic_lists/replaceProperties");<br/>modified("/_user/9/90/904715/private/dynamic_lists/contentType");<br/>modified("/_user/9/90/904715/private/dynamic_lists/operation");<br/>modified("/_user/9/90/904715/private/dynamic_lists/replace");<br/>modified("/_user/9/90/904715/private/dynamic_lists/content");<br/></pre></div></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><a href="">Go Back</a></p>
+    <p><a href="/_user/9/90/904715/private/dynamic_lists">Modified Resource</a></p>
+    <p><a href="/_user/9/90/904715/private">Parent of Modified Resource</a></p>
+    </body>
+</html>
+
+localhost:~/dev/myberkeley/working/curl -u 904715:testuser http://localhost:8080/~904715/private/dynamic_listslocalhost:~/dev/myberkeley/working/load $
+
+
+
+
+
+
+curl: (3) [globbing] nested braces not supported at pos 16
+
+curl: (3) [globbing] nested braces not supported at pos 16
+
+curl: (3) [globbing] nested braces not supported at pos 16
+
+curl: (3) [globbing] nested braces not supported at pos 16
+
+curl: (3) [globbing] nested braces not supported at pos 16
+
+curl: (3) [globbing] nested braces not supported at pos 16
+
+curl: (3) [globbing] nested braces not supported at pos 16
+
+curl: (3) [globbing] nested braces not supported at pos 16
+
+<html>
+<head>
+    <title>Content modified /_user/9/90/904715/private/dynamic_lists</title>
+</head>
+    <body>
+    <h1>Content modified /_user/9/90/904715/private/dynamic_lists</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>Status</td>
+                <td><div id="Status">200</div></td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td><div id="Message">OK</div></td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td><a href="/_user/9/90/904715/private/dynamic_lists" id="Location">/_user/9/90/904715/private/dynamic_lists</a></td>
+            </tr>
+            <tr>
+                <td>Parent Location</td>
+                <td><a href="/_user/9/90/904715/private" id="ParentLocation">/_user/9/90/904715/private</a></td>
+            </tr>
+            <tr>
+                <td>Path</td>
+                <td><div id="Path">/_user/9/90/904715/private/dynamic_lists</div></td>
+            </tr>
+            <tr>
+                <td>Referer</td>
+                <td><a href="" id="Referer"></a></td>
+            </tr>
+            <tr>
+                <td>ChangeLog</td>
+                <td><div id="ChangeLog"><pre>modified("/_user/9/90/904715/private/dynamic_lists/replaceProperties");<br/>modified("/_user/9/90/904715/private/dynamic_lists/contentType");<br/>modified("/_user/9/90/904715/private/dynamic_lists/operation");<br/>modified("/_user/9/90/904715/private/dynamic_lists/replace");<br/>modified("/_user/9/90/904715/private/dynamic_lists/content");<br/></pre></div></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><a href="">Go Back</a></p>
+    <p><a href="/_user/9/90/904715/private/dynamic_lists">Modified Resource</a></p>
+    <p><a href="/_user/9/90/904715/private">Parent of Modified Resource</a></p>
+    </body>
+</html>localhost:~/dev/myberkeley/working/load $
+
+
+
+
+this one produces 500:
+curl -u joe:test -F :operation=import -F :contentType=json -F :content={"lists":{"__array__0__":{"sakai:id":"dl-904715-1288636517379","sakai:name":"testlistname","sakai:description":"testlistdesc","sakai:dateModified":"2010-11-01T18:35:17.379Z","sakai:dateModified@TypeHint":"date","sakai:modifiedBy":"904715","query":{"context":{"__array__0__":"g-ced-students"},"standing":{"__array__0__":"undergrad"},"major":{"__array__0__":"CITY REGIONAL PLAN"}}}}} -F :replace=true -F :replaceProperties=true http://localhost:8080/~joe/private/dynamic_lists
+
+
+
+Eli's successful my links post headers:
+
+:content{"columns":{"column1":{"__array__0__":{"name":"mylinks","visible":"block","uid":"id1567072440991"}},"column2":{"__array__0__":{"name":"myreminders","visible":"block","uid":"id3199935113053"}}},"layout":"dev"}:contentTypejson:operationimport:replacetrue:replacePropertiestrue
+
+this curl version of previous headers fails for me:
+curl -u joe:test -F :operation=import -F :contentType=json -F :replace=true -F :replaceProperties=true -F :content={"columns":{"column1":{"__array__0__":{"name":"myelin's","visible":"block","uid":"id1567072440991"}},"column2":{"__array__0__":{"name":"myreminders","visible":"block","uid":"id3199935113053"}}},"layout":"dev"} http://localhost:8080/~joe/private/my_links
+
+
+working for Eli:
+curl -u joe:test -F :operation=import -F :contentType=json -F :content="" -F :replace=true -F :replaceProperties=true http://localhost:8080/~Joe/dashboard/mysakaidashboard/dashboard
+
+
+
