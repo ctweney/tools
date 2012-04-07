@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl -i -L -e http://localhost:8080 -g $@
