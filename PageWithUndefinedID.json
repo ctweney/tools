@@ -1,163 +1,201 @@
 {
-  "_lastModifiedBy":"873558",
-  "sakai:permissions":"public",
-  "_mimeType":"x-sakai/document",
-  "_createdBy":"admin",
-  "_path":"kvhQ4SYeKub",
-  "sakai:description":"",
-  "sling:resourceType":"sakai/pooled-content",
-  "sakai:pooled-content-viewer":[
-    "anonymous",
-    "COSE-manager",
-    "COSE-member",
-    "everyone"
+  "_lastModifiedBy": "675750",
+  "_mimeType": "x-sakai/document",
+  "_createdBy": "admin",
+  "_path": "iT2T3isSyb",
+  "sakai:description": "",
+  "sling:resourceType": "sakai/pooled-content",
+  "sakai:pooled-content-viewer": [
+    "COSE-member"
   ],
-  "sakai:pooled-content-manager":[
+  "sakai:pooled-content-manager": [
+    "675750",
     "COSE-manager"
   ],
-  "_created":1330571104132,
-  "sakai:pool-content-created-for":"873558",
-  "_id":"V5tUQGNLEeGBU00OqeXzCg+",
-  "sakai:pooled-content-file-name":"Meeting 2/28/12",
-  "structure0":"{\"_poolpath\":\"/p/kvhQ4SYeKub\",\"id2982652\":{\"_ref\":\"id2982652\",\"_title\":\"Meeting 2/28/12\",\"_order\":0,\"_canSubedit\":true,\"_canEdit\":true,\"_poolpath\":\"/p/kvhQ4SYeKub\",\"main\":{\"_ref\":\"id2982652\",\"_order\":0,\"_title\":\"Untitled Page\",\"_childCount\":0,\"_canSubedit\":true,\"_canEdit\":true,\"_poolpath\":\"/p/kvhQ4SYeKub\",\"_id\":\"main\",\"_elements\":[]},\"_childCount\":1,\"_id\":\"id2982652\",\"_elements\":[{\"_ref\":\"id2982652\",\"_order\":0,\"_title\":\"Untitled Page\",\"_childCount\":0,\"_canSubedit\":true,\"_canEdit\":true,\"_poolpath\":\"/p/kvhQ4SYeKub\",\"_id\":\"main\",\"_elements\":[]}]}}",
-  "_lastModified":1332563942119,
-  "sakai:copyright":"creativecommons",
-  "sakai:pooled-content-editor":[
-  ],
-  "activity":{
-    "sling:resourceType":"sakai/activityStore",
-    "_created":1330571104460,
-    "_id":"V81gwGNLEeGBU00OqeXzCg+",
-    "_lastModifiedBy":"admin",
-    "_lastModified":1330571104460,
-    "_createdBy":"admin",
-    "_path":"kvhQ4SYeKub/activity",
-    "2012-02-29-19-2e7256ef7b96d67317857e115020203c047136f1":{
-      "sling:resourceType":"sakai/activity-post",
-      "_created":1330571104586,
-      "sakai:activity-source":"kvhQ4SYeKub",
-      "_id":"V-CaoGNLEeGBU00OqeXzCg+",
-      "sakai:activity-appid":"default",
-      "sakai:activity-type":"pooled content",
-      "_lastModifiedBy":"admin",
-      "_lastModified":1330571104818,
-      "sakai:activity-actor":"873558",
-      "sakai:activityMessage":"UPDATED_CONTENT",
-      "_createdBy":"admin",
-      "_path":"kvhQ4SYeKub/activity/2012-02-29-19-2e7256ef7b96d67317857e115020203c047136f1"
+  "_created": 1316624475329,
+  "sakai:pool-content-created-for": "675750",
+  "_id": "UQzzEORzEeCByGYiqeXzCg+",
+  "structure0": "{\"_poolpath\":\"/p/iT2T3isSyb\",\"id2070213\":{\"_ref\":\"id2070213\",\"_title\":\"Planning Meeting 9/22/11\",\"_order\":0,\"_canSubedit\":true,\"_canEdit\":true,\"_poolpath\":\"/p/iT2T3isSyb\",\"main\":{\"_ref\":\"id2070213\",\"_order\":0,\"_title\":\"Untitled Page\",\"_childCount\":0,\"_canSubedit\":true,\"_canEdit\":true,\"_poolpath\":\"/p/iT2T3isSyb\",\"_id\":\"main\",\"_elements\":[]},\"_childCount\":1,\"_id\":\"id2070213\",\"_elements\":[{\"_ref\":\"id2070213\",\"_order\":0,\"_title\":\"Untitled Page\",\"_childCount\":0,\"_canSubedit\":true,\"_canEdit\":true,\"_poolpath\":\"/p/iT2T3isSyb\",\"_id\":\"main\",\"_elements\":[]}]}}",
+  "sakai:pooled-content-file-name": "Agendas",
+  "_lastModified": 1317251577324,
+  "sakai:copyright": "creativecommons",
+  "id4944794": {
+    "_created": 1316738160145,
+    "_id": "Ans4EOV8EeCxstiaqeXzCg+",
+    "_lastModifiedBy": "675750",
+    "_lastModified": 1316738160145,
+    "_createdBy": "675750",
+    "_path": "iT2T3isSyb/id4944794",
+    "ggadget": {
+      "width_unit": "px",
+      "_created": 1316738160148,
+      "height": 400,
+      "_id": "AnutQOV8EeCxstiaqeXzCg+",
+      "_lastModifiedBy": "675750",
+      "_lastModified": 1316738160148,
+      "width": 600,
+      "_createdBy": "675750",
+      "border_color": "cccccc",
+      "_path": "iT2T3isSyb/id4944794/ggadget",
+      "url": "http://www.gmodules.com/ig/ifr?url=http://www.mylisty.net/Listy/gadget/MyListy.xml&up_title=My%20Listy&up_bgcolor=%23e5ecf9&up_listyuserid=&up_currentListyTabIndex=0&up_settingscolor=black&synd=open&w=320&h=300&title=__UP_title__&border=%23ffffff%7C3px%2C1px+solid+%23999999&output=html",
+      "border_size": 0
     }
   },
-  "id3765703":{
-    "_created":1330571104421,
-    "_id":"V8neUWNLEeGBU00OqeXzCg+",
-    "page":"",
-    "_lastModifiedBy":"873558",
-    "_lastModified":1330571104421,
-    "_previousVersion":"V8dtUGNLEeGBU00OqeXzCg+",
-    "_createdBy":"873558",
-    "_path":"kvhQ4SYeKub/id3765703",
-    "_versionHistoryId":"V8neUGNLEeGBU00OqeXzCg+"
+  "activityFeed": {
+    "_created": 1316624475429,
+    "_id": "URw1UORzEeCByGYiqeXzCg+",
+    "_lastModifiedBy": "admin",
+    "_lastModified": 1316624475429,
+    "_createdBy": "admin",
+    "_path": "iT2T3isSyb/activityFeed",
+    "2011-09-21-10-bfa70e181d4d636656600154d63595d3ad0ecce8": {
+      "sling:resourceType": "sakai/activity",
+      "_created": 1316624475524,
+      "sakai:activity-source": "iT2T3isSyb",
+      "_id": "USq0QORzEeCByGYiqeXzCg+",
+      "_lastModifiedBy": "admin",
+      "sakai:activity-type": "pooled content",
+      "sakai:activity-appid": "default",
+      "_lastModified": 1316624475524,
+      "sakai:activity-actor": "675750",
+      "sakai:activityMessage": "UPDATED_CONTENT",
+      "_createdBy": "admin",
+      "_path": "iT2T3isSyb/activityFeed/2011-09-21-10-bfa70e181d4d636656600154d63595d3ad0ecce8"
+    }
   },
-  "undefined":{
-    "_created":1330571397750,
-    "_id":"hDcIIGNTEeGBU00OqeXzCg+",
-    "_lastModifiedBy":"873558",
-    "page":"<P style=\"TEXT-ALIGN: left; MARGIN: 0cm 0cm 0pt\" class=MsoNormal align=center><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US><\/SPAN>&nbsp;<\/P>\r\n<P style=\"TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt\" class=MsoNormal align=center><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>&lt;February 28, 2012: COSE Meeting Notes&gt;<?xml:namespace prefix = o ns = \"urn:schemas-microsoft-com:office:office\" /><o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"MARGIN: 0cm 0cm 0pt\" class=MsoNormal><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US><o:p>&nbsp;<\/o:p><\/SPAN><\/P>\r\n<P style=\"MARGIN: 0cm 0cm 0pt\" class=MsoNormal><B><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Updates on Cal Central<\/SPAN><\/B><\/P>\r\n<UL>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">We can now add people to Cal Central without refreshing the server<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">Fund has finally been allocated for Cal Central development<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">OE IT Productivity Suite seeking a Student Communications Liaison<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">One class in I-School is pilot-testing this semester, in addition to CNR and CED<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">Planning a \u201cbug fix\u201d release<\/SPAN><SPAN lang=EN-US><SPAN style=\"FONT-FAMILY: ?? ??\" data-mce-style=\"font-family: ?? ??;\">:<\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\"> switching database to Oracle<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">Calendar feature will be in store in Cal Central<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">Tools allowing more freedom in \u201ccreating contents\u201d will be released<\/SPAN><\/LI>\r\n<UL>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">Many students wanted to post media-rich webpage rather than simple documents. <\/SPAN><SPAN style=\"FONT-SIZE: 12pt; mso-fareast-font-family: '?? ??'; mso-bidi-font-family: Calibri; mso-ascii-font-family: '?? ??'; mso-hansi-font-family: '?? ??'\" data-mce-style=\"font-size: 12pt; mso-fareast-font-family: '?? ??'; mso-bidi-font-family: Calibri; mso-ascii-font-family: '?? ??'; mso-hansi-font-family: '?? ??';\"><SPAN style=\"FONT-FAMILY: ?? ??\" data-mce-style=\"font-family: ?? ??;\">?<\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\"><SPAN lang=EN-US>Tools that help change the layout of the page!<\/SPAN><\/SPAN><\/LI><\/UL>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>\u201cCollection\u201d / Folder feature (ex: If you mostly post images, it will become a gallery)<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Clear roadmap on how much we\u2019ll be able to deliver by Fall 12, but longer-term roadmap for Cal Central development is still in flux<\/SPAN><\/LI>\r\n<UL>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Negotiations with Sakai OAE: Sakai OAE is currently focused more on improving features than on ensuring stability<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>We want Cal central to be available to everyone in Fall 12, but not aggressively promote it (probably about &lt;100 classes engaged in the system) b/c we\u2019re still in \u201cPilot mode\u201d and still need to work on a lot of things<\/SPAN><\/LI><\/UL>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US><o:p><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>?<\/SPAN><\/SPAN><\/SPAN><\/o:p><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>All classes with class pages on bSpace will have a course catalog in Cal Central<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>People from Rescomp\u2014including Anne Marie, the Associate Director of Student Affairs IT\u2014will be coming in for the next COSE meeting in 2 weeks<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Integration of \u201cGoogle Apps for Education\u201d<\/SPAN><\/LI>\r\n<UL>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Calmail migration to Gmail: We\u2019ll still keep our \u201c@berkeley.edu\u201d but will be able to access our emails through gmail and the school calmail website<\/SPAN><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\"><SPAN style=\"FONT: 7pt 'Times New Roman'\"><\/SPAN><\/SPAN><\/SPAN><\/LI><\/UL>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Sakai OAE widget library: Anyone can develop widgets that are either specific to Berkeley or for general use in Sakai. <\/SPAN><SPAN style=\"FONT-SIZE: 12pt; mso-fareast-font-family: '?? ??'; mso-bidi-font-family: Calibri; mso-ascii-font-family: '?? ??'; mso-hansi-font-family: '?? ??'\"><SPAN style=\"FONT-FAMILY: ?? ??\" data-mce-style=\"font-family: ?? ??;\" face=\"?? ??\">? <\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>If we can convince coders that Cal Central will get a lot of access in the future and it\u2019s worth developing widgets for Cal Central, widgets could attract more people to use Cal Central more often.<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Messaging feature: Still in development, but the ideal final product will be scalable to scalable to any group on campus (i.e. Student groups, Registrar\u2019s Office, Staff, etc.)<\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>?<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Privacy Settings in Cal Central: As of now, we can only choose the privacy setting for everything (\u201cEverything open to the public\u201d or \u201cOnly open to logged-in people\u201d). But we will be able to choose different settings for different items in the future.<o:p><\/o:p><\/SPAN><\/LI><\/UL>\r\n<P style=\"MARGIN: 0cm 0cm 0pt\" class=MsoNormal><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US><o:p>&nbsp;<\/o:p><\/SPAN><\/P>\r\n<P style=\"MARGIN: 0cm 0cm 0pt\" class=MsoNormal><B><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Reminder<\/SPAN><\/B><\/P>\r\n<UL>\r\n<LI>\r\n<DIV style=\"MARGIN: 0cm 0cm 0pt\" class=MsoNormal><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Permanent Meeting Time/Place: 4-5PM every other Tuesday @ 231 Wheeler<\/SPAN><\/DIV><\/LI>\r\n<LI>\r\n<DIV style=\"MARGIN: 0cm 0cm 0pt\" class=MsoNormal><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Next Meeting: 4-5PM on Tuesday, 3/13 @ 231 Wheeler<o:p><\/o:p><\/SPAN><\/DIV><\/LI><\/UL>",
-    "_lastModified":1330574614728,
-    "_previousVersion":"eRmSoGNTEeGBU00OqeXzCg+",
-    "_createdBy":"873558",
-    "_path":"kvhQ4SYeKub/undefined",
-    "_versionHistoryId":"fkMAEGNMEeGBU00OqeXzCg+",
-    "autosave":{
-      "_created":1330571736372,
-      "_id":"0HN_QGNMEeGBU00OqeXzCg+",
-      "page":"<P style=\"TEXT-ALIGN: left; MARGIN: 0cm 0cm 0pt\" class=MsoNormal align=center><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US><\/SPAN>&nbsp;<\/P>\r\n<P style=\"TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt\" class=MsoNormal align=center><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>&lt;February 28, 2012: COSE Meeting Notes&gt;<?xml:namespace prefix = o ns = \"urn:schemas-microsoft-com:office:office\" /><o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"MARGIN: 0cm 0cm 0pt\" class=MsoNormal><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US><o:p>&nbsp;<\/o:p><\/SPAN><\/P>\r\n<P style=\"MARGIN: 0cm 0cm 0pt\" class=MsoNormal><B><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Updates on Cal Central<\/SPAN><\/B><\/P>\r\n<UL>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">We can now add people to Cal Central without refreshing the server<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">Fund has finally been allocated for Cal Central development<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">OE IT Productivity Suite seeking a Student Communications Liaison<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">One class in I-School is pilot-testing this semester, in addition to CNR and CED<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">Planning a \u201cbug fix\u201d release<\/SPAN><SPAN lang=EN-US><SPAN style=\"FONT-FAMILY: ?? ??\" data-mce-style=\"font-family: ?? ??;\">:<\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\"> switching database to Oracle<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">Calendar feature will be in store in Cal Central<\/SPAN><\/LI>\r\n<LI><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">Tools allowing more freedom in \u201ccreating contents\u201d will be released<\/SPAN><\/LI><\/UL>\r\n<P><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\"><\/SPAN><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US data-mce-style=\"font-family: Wingdings; font-size: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings;\"><SPAN style=\"mso-list: Ignore\" data-mce-style=\"mso-list: Ignore;\">&nbsp;&nbsp;&nbsp;w<SPAN style=\"FONT: 7pt 'Times New Roman'\" data-mce-style=\"font: 7pt 'Times New Roman';\">&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\">Many students wanted to post media-rich webpage rather than simple documents. <\/SPAN><SPAN style=\"FONT-SIZE: 12pt; mso-fareast-font-family: '?? ??'; mso-bidi-font-family: Calibri; mso-ascii-font-family: '?? ??'; mso-hansi-font-family: '?? ??'\" data-mce-style=\"font-size: 12pt; mso-fareast-font-family: '?? ??'; mso-bidi-font-family: Calibri; mso-ascii-font-family: '?? ??'; mso-hansi-font-family: '?? ??';\"><SPAN style=\"FONT-FAMILY: ?? ??\" data-mce-style=\"font-family: ?? ??;\">?<\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" data-mce-style=\"font-family: 'Calibri','sans-serif'; font-size: 12pt;\"><SPAN lang=EN-US>Tools that help change the layout of the page!<\/SPAN><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 40pt; mso-list: l0 level1 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">\u009e<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp;&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>\u201cCollection\u201d / Folder feature (ex: If you mostly post images, it will become a gallery)<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 40pt; mso-list: l0 level1 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">\u009e<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp;&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Clear roadmap on how much we\u2019ll be able to deliver by Fall 12, but longer-term roadmap for Cal Central development is still in flux<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 60pt; mso-list: l0 level2 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">w<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Negotiations with Sakai OAE: Sakai OAE is currently focused more on improving features than on ensuring stability<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 60pt; mso-list: l0 level2 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">w<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>We want Cal central to be available to everyone in Fall 12, but not aggressively promote it (probably about &lt;100 classes engaged in the system) b/c we\u2019re still in \u201cPilot mode\u201d and still need to work on a lot of things<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 40pt; mso-list: l0 level1 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">\u009e<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp;&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>All classes with class pages on bSpace will have a course catalog in Cal Central<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 40pt; mso-list: l0 level1 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">\u009e<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp;&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>People from Rescomp\u2014including Anne Marie, the Associate Director of Student Affairs IT\u2014will be coming in for the next COSE meeting in 2 weeks<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 40pt; mso-list: l0 level1 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">\u009e<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp;&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Integration of \u201cGoogle Apps for Education\u201d<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 60pt; mso-list: l0 level2 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">w<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Calmail migration to Gmail: We\u2019ll still keep our \u201c@berkeley.edu\u201d but will be able to access our emails through gmail and the school calmail website<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 40pt; mso-list: l0 level1 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">\u009e<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp;&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Sakai OAE widget library: Anyone can develop widgets that are either specific to Berkeley or for general use in Sakai. <\/SPAN><SPAN style=\"FONT-SIZE: 12pt; mso-fareast-font-family: '?? ??'; mso-bidi-font-family: Calibri; mso-ascii-font-family: '?? ??'; mso-hansi-font-family: '?? ??'\"><SPAN style=\"FONT-FAMILY: ?? ??\" data-mce-style=\"font-family: ?? ??;\" face=\"?? ??\">? <\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>If we can convince coders that Cal Central will get a lot of access in the future and it\u2019s worth developing widgets for Cal Central, widgets could attract more people to use Cal Central more often.<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 40pt; mso-list: l0 level1 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">\u009e<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp;&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Messaging feature: Still in development, but the ideal final product will be scalable to scalable to any group on campus (i.e. Student groups, Registrar\u2019s Office, Staff, etc.)<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 40pt; mso-list: l0 level1 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">\u009e<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp;&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Privacy Settings in Cal Central: As of now, we can only choose the privacy setting for everything (\u201cEverything open to the public\u201d or \u201cOnly open to logged-in people\u201d). But we will be able to choose different settings for different items in the future.<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"MARGIN: 0cm 0cm 0pt\" class=MsoNormal><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US><o:p>&nbsp;<\/o:p><\/SPAN><\/P>\r\n<P style=\"MARGIN: 0cm 0cm 0pt\" class=MsoNormal><B><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Reminder<o:p><\/o:p><\/SPAN><\/B><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 40pt; mso-list: l0 level1 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">\u009e<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp;&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Permanent Meeting Time/Place: 4-5PM every other Tuesday @ 231 Wheeler<o:p><\/o:p><\/SPAN><\/P>\r\n<P style=\"TEXT-INDENT: -20pt; MARGIN: 0cm 0cm 0pt 40pt; mso-list: l0 level1 lfo1; mso-para-margin-left: 0gd\" class=MsoListParagraph><SPAN style=\"FONT-FAMILY: Wingdings; FONT-SIZE: 12pt; mso-fareast-font-family: Wingdings; mso-bidi-font-family: Wingdings\" lang=EN-US><SPAN style=\"mso-list: Ignore\">\u009e<SPAN style=\"FONT: 7pt 'Times New Roman'\">&nbsp;&nbsp; <\/SPAN><\/SPAN><\/SPAN><SPAN style=\"FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 12pt\" lang=EN-US>Next Meeting: 4-5PM on Tuesday, 3/13 @ 231 Wheeler<o:p><\/o:p><\/SPAN><\/P>",
-      "_lastModifiedBy":"873558",
-      "_lastModified":1330572685264,
-      "_createdBy":"873558",
-      "_path":"kvhQ4SYeKub/undefined/autosave"
+  "id4321877": {
+    "_created": 1316624482803,
+    "_id": "VYFkMORzEeCByGYiqeXzCg+",
+    "_lastModifiedBy": "675750",
+    "_lastModified": 1316624482803,
+    "_createdBy": "675750",
+    "_path": "iT2T3isSyb/id4321877",
+    "editing": {
+      "time": 1316649687435,
+      "_created": 1316624482809,
+      "_id": "VYJOkORzEeCByGYiqeXzCg+",
+      "_lastModifiedBy": "675750",
+      "_lastModified": 1316624487794,
+      "_createdBy": "675750",
+      "_path": "iT2T3isSyb/id4321877/editing"
+    }
+  },
+  "activity": {
+    "sling:resourceType": "sakai/activityStore",
+    "_created": 1316624475402,
+    "_id": "URgWoORzEeCByGYiqeXzCg+",
+    "_lastModifiedBy": "admin",
+    "_lastModified": 1316624475402,
+    "_createdBy": "admin",
+    "_path": "iT2T3isSyb/activity",
+    "2011-09-21-10-bfa70e181d4d636656600154d63595d3ad0ecce8": {
+      "sling:resourceType": "sakai/activity-post",
+      "_created": 1316624475433,
+      "sakai:activity-source": "iT2T3isSyb",
+      "_id": "URzRkORzEeCByGYiqeXzCg+",
+      "sakai:activity-appid": "default",
+      "sakai:activity-type": "pooled content",
+      "_lastModifiedBy": "admin",
+      "_lastModified": 1316624475451,
+      "sakai:activity-actor": "675750",
+      "sakai:activityMessage": "UPDATED_CONTENT",
+      "_createdBy": "admin",
+      "_path": "iT2T3isSyb/activity/2011-09-21-10-bfa70e181d4d636656600154d63595d3ad0ecce8"
+    }
+  },
+  "id2070213": {
+    "_created": 1316624993787,
+    "_id": "qtHZoOf4EeCnX1IVqeXzCg+",
+    "page": "<h1>Agenda for Planning Meeting<br>September 22, 2011<\/h1><p><strong>Target event:<\/strong> Presentation about CalCentral to ASUC Senate on September 28, 2011<\/p><p><span style=\"color: rgb(51, 102, 255);\">Tony's comments in blue<\/span>.<\/p><p><span style=\"color: rgb(153, 51, 0);\">Michael's comments<\/span><\/p><p>See <strong>\"Goals of Meeting\"<\/strong> section for notes from planning meeting.<br><\/p><p><\/p><hr><p><\/p><h2>Agenda<\/h2><h3>Strategy<\/h3><ul><li>Why is COSE making a presentation to the ASUC Senate about CalCentral?<\/li><ul><li><span style=\"color: rgb(153, 51, 0);\">Recruitment?<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">Ideas for future projects/meetings?<\/span><br><\/li><\/ul><li><span style=\"color: rgb(51, 102, 255);\">Why is the CalCentral team making a presentation to the ASUC Senate<\/span><\/li><ul><li><span style=\"color: rgb(51, 102, 255);\">garner support for project priorities? What are they?<\/span><\/li><li><span style=\"color: rgb(51, 102, 255);\"><span style=\"color: rgb(153, 51, 0);\">Pitch Senate to be a project resource (advocate for student calendars, funding, etc.)?<\/span><br><\/span><\/li><li><span style=\"color: rgb(51, 102, 255);\">help garner $$ for CalCentral priorities?<br><\/span><\/li><li><span style=\"color: rgb(51, 102, 255);\">help get the word out about CalCentral?<\/span><\/li><li><span style=\"color: rgb(51, 102, 255);\">Become a sponsor of CalCentral?<\/span><\/li><li><span style=\"color: rgb(51, 102, 255);\"><span style=\"color: rgb(153, 51, 0);\">\"Big picture\" feedback on progress, methods, etc?<\/span><br><\/span><\/li><\/ul><li><span style=\"color: rgb(51, 102, 255);\">What's COSE's relationship to CalCentral<\/span><br><\/li><li>Does COSE have any obligation to the&nbsp;ASUC or Senate?<\/li><ul><li>Isn't COSE an ASUC committee? If so, this would be good to state on either the \"About COSE\" or \"History\" page.<\/li><ul><li><span style=\"color: rgb(153, 51, 0);\">No, it's technically still unofficial. We can discuss more tomorrow.<\/span><\/li><\/ul><\/ul><li>What can the ASUC Senate can do for COSE/<span style=\"color: rgb(153, 51, 0);\">CalCentral<\/span>?<\/li><li><span style=\"color: rgb(153, 51, 0);\">How much focus should be on COSE vs CalCentral?<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">How is presenting to the ASUC Senate different from talking with COSE?<\/span><\/li><ul><li><span style=\"color: rgb(153, 51, 0);\">Formality<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">Big picture focus<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">Publicity<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">Larger group<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">Cross-campus/diverse representation<br><\/span><\/li><\/ul><\/ul><h3>Tactics<\/h3><ul><li>Which facets of&nbsp;CalCentral can we present that will best meet the strategic goals above?<\/li><li>What are the possible responses COSE can expect from&nbsp;the ASUC Senate?<\/li><li><span style=\"color: rgb(153, 51, 0);\" data-mce-style=\"color: #993300;\">What can we ask from the ASUC Senate?<\/span><br><\/li><\/ul><p><\/p><hr><p><br><\/p><p><\/p><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\">Goals of meeting<\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><ul><li><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">Provide ASUC with status update on project<\/span><\/li><li><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">Provide ASUC with backround and reasons that allow them to encourage OE to increase funding for CalCentral<\/span><\/li><\/ul><h2>Review<\/h2><p>What is COSE? [Students]<\/p><p>What is CalCentral?<\/p><ul><li>Based on Sakai OAE<\/li><li>Solve student problems of lack of integration of campus tools<\/li><\/ul><p>Two opportunities for feedback on COSE and CalCentral:<\/p><p>Please come share ideas or send by email:<\/p><ul><li>Upcoming COSE meeting<\/li><li>Email<\/li><\/ul><h2><span color=\"#993300\" style=\"color: rgb(0, 0, 0); \">Status update<\/span><\/h2><h3><span color=\"#993300\" style=\"color: rgb(0, 0, 0); \">Pilot in two colleges and two student groups:<\/span><span class=\"Apple-style-span\" style=\"font-size: 13px; font-weight: normal; \">&nbsp;[Students]<\/span><\/h3><ul><li><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">http://calcentral.berkeley.edu<\/span><\/li><li><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\">Pilot colleges: CED and&nbsp;<\/span><span class=\"Apple-style-span\">CNR<\/span><\/span><\/li><li><span style=\"color: rgb(0, 0, 0); \"><span class=\"Apple-style-span\">COSE:&nbsp;https://calcentral.berkeley.edu/~COSE<\/span><\/span><\/li><li><span style=\"color: rgb(0, 0, 0); \"><span class=\"Apple-style-span\">Student Group Forum<\/span><\/span><\/li><\/ul><div>Quote from a pilot student<\/div><h3 data-mce-style=\"font-size: 16px; margin-top: 1em; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; font-weight: bold; padding: 0px;\" style=\"font-size: 16px; margin-top: 1em; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; font-weight: bold; padding: 0px;\"><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">High-Level Student Goals for CalCentral<\/span><\/h3><ul><li>In response to student input<\/li><li>Provide links OE proposals<\/li><ul><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Advisor\u2019s Toolkit - Medium term<\/span><\/li><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Communications &amp; Knowledgebase<\/span><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">&nbsp;(Targeted messaging)- Medium term<\/span><\/li><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Academic Planning - Long term<\/span><\/li><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Bill Paying<\/span><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">&nbsp;- Long term<\/span><\/li><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Academic Commons Expansion - Short term<\/span><\/li><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Transition of&nbsp;separate campus websites into CalCentral<\/span><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">&nbsp;<\/span><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">- Short term, needs advocate<\/span><\/li><\/ul><\/ul><p>Short term goals<br><\/p><ul><li>Too many messages -- only send /show what's relevant to me<\/li><li style=\"font-size: 16px; font-weight: bold; \"><span class=\"Apple-style-span\" style=\"font-size: 13px; font-weight: normal; \">Remind me of important tasks and events<\/span><\/li><\/ul><div><div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><\/div><p style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \"><\/p><\/div><div>Implications<\/div><div><ul style=\"margin-top: 1em; margin-right: 1em; margin-bottom: 1em; margin-left: 2em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \"><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: disc; list-style-position: outside; list-style-image: initial; font-size: 16px; font-weight: bold; \"><span class=\"Apple-style-span\" style=\"font-size: 13px; font-weight: normal; \">Contexts for each pilot college<\/span><\/li><li>Data for each student<\/li><li>Include students in campus calendar system (<span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Communications -&nbsp;<\/span>Productivity Suite)<\/li><\/ul><\/div><p style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \"><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">Challenges<\/span><\/p><ul style=\"margin-top: 1em; margin-right: 1em; margin-bottom: 1em; margin-left: 2em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \"><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: disc; list-style-position: outside; list-style-image: initial; \">Campus data quality<\/li><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: disc; list-style-position: outside; list-style-image: initial; \">Schedule of campus calendar project<\/li><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: disc; list-style-position: outside; list-style-image: initial; \">Historical silo model of funding<\/li><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: disc; list-style-position: outside; list-style-image: initial; \">Dependence on Sakai OAE development and schedule<\/li><\/ul><h3><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\" data-mce-style=\"color: #993300;\" style=\"color: #993300;\">OE<\/span><\/span><\/h3><p><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \"><\/span><\/p><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><span style=\"font-size: small; color: rgb(0, 0, 0); \">Relationship between CalCentral and Operational Excellence<\/span><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><span style=\"font-size: small; color: rgb(0, 0, 0); \">Outstanding proposals (OE Initiatives):<\/span><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><br><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><span style=\"font-size: small; color: rgb(0, 0, 0); \">CalCentral addresse many OE themes<\/span><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; \"><span size=\"2\" data-mce-style=\"font-size: x-small;\" style=\"font-size: x-small;\">In initials assessment, CalCental was most impactful and most important of any campus project<\/span><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; \"><br><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; \"><span size=\"2\" data-mce-style=\"font-size: x-small;\" style=\"font-size: x-small;\">Five OE initiatives<\/span><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><ul><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Advisor\u2019s Toolkit<\/span><\/li><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Communications &amp; Knowledgebase<\/span><\/li><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Academic Planning<\/span><\/li><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Bill Paying<\/span><\/li><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Academic Commons Expansion<\/span><\/li><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Transition of&nbsp;separate campus websites into CalCentral<\/span><\/li><\/ul><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><\/div><p><\/p><p><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">OE funding is under consideration<\/span><\/p><p><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">WIthout further funding, bSpace will be replaced by a new version of Sakai, which will lack the features students have requested<\/span><\/p><h2>How Can ASUC Help Student Needs get Met?<\/h2><p>Advoacate for funding. Who can they contact?<\/p><ul><li>John Wilton<\/li><li>Shel Waggener<\/li><li>Kathy Koshland<\/li><li>Harry Le Grande<\/li><\/ul><p><br><br><\/p>",
+    "_lastModifiedBy": "675750",
+    "_lastModified": 1317011602213,
+    "_previousVersion": "NTSkcOV9EeCxstiaqeXzCg+",
+    "_createdBy": "675750",
+    "_path": "iT2T3isSyb/id2070213",
+    "_versionHistoryId": "ta7csOR0EeCByGYiqeXzCg+",
+    "editing": {
+      "_created": 1316624993792,
+      "time": 1317036798198,
+      "_id": "hhQgAOR0EeCByGYiqeXzCg+",
+      "_lastModifiedBy": "675750",
+      "_lastModified": 1317011598486,
+      "_createdBy": "675750",
+      "_path": "iT2T3isSyb/id2070213/editing"
     },
-    "editing":{
-      "_created":1330571398137,
-      "time":1332589069836,
-      "_id":"BtjukGNMEeGBU00OqeXzCg+",
-      "_lastModifiedBy":"873558",
-      "_lastModified":1332563884672,
-      "_createdBy":"873558",
-      "_path":"kvhQ4SYeKub/undefined/editing"
+    "autosave": {
+      "_created": 1316625008784,
+      "_id": "jwO5AOR0EeCByGYiqeXzCg+",
+      "_lastModifiedBy": "675750",
+      "page": "<h1>Agenda for Planning Meeting<br>September 22, 2011<\/h1><p><strong>Target event:<\/strong> Presentation about CalCentral to ASUC Senate on September 28, 2011<\/p><p><span style=\"color: rgb(51, 102, 255);\">Tony's comments in blue<\/span>.<\/p><p><span style=\"color: rgb(153, 51, 0);\">Michael's comments<\/span><\/p><p>See <strong>\"Goals of Meeting\"<\/strong> section for notes from planning meeting.<br><\/p><p><\/p><hr><p><\/p><h2>Agenda<\/h2><h3>Strategy<\/h3><ul><li>Why is COSE making a presentation to the ASUC Senate about CalCentral?<\/li><ul><li><span style=\"color: rgb(153, 51, 0);\">Recruitment?<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">Ideas for future projects/meetings?<\/span><br><\/li><\/ul><li><span style=\"color: rgb(51, 102, 255);\">Why is the CalCentral team making a presentation to the ASUC Senate<\/span><\/li><ul><li><span style=\"color: rgb(51, 102, 255);\">garner support for project priorities? What are they?<\/span><\/li><li><span style=\"color: rgb(51, 102, 255);\"><span style=\"color: rgb(153, 51, 0);\">Pitch Senate to be a project resource (advocate for student calendars, funding, etc.)?<\/span><br><\/span><\/li><li><span style=\"color: rgb(51, 102, 255);\">help garner $$ for CalCentral priorities?<br><\/span><\/li><li><span style=\"color: rgb(51, 102, 255);\">help get the word out about CalCentral?<\/span><\/li><li><span style=\"color: rgb(51, 102, 255);\">Become a sponsor of CalCentral?<\/span><\/li><li><span style=\"color: rgb(51, 102, 255);\"><span style=\"color: rgb(153, 51, 0);\">\"Big picture\" feedback on progress, methods, etc?<\/span><br><\/span><\/li><\/ul><li><span style=\"color: rgb(51, 102, 255);\">What's COSE's relationship to CalCentral<\/span><br><\/li><li>Does COSE have any obligation to the&nbsp;ASUC or Senate?<\/li><ul><li>Isn't COSE an ASUC committee? If so, this would be good to state on either the \"About COSE\" or \"History\" page.<\/li><ul><li><span style=\"color: rgb(153, 51, 0);\">No, it's technically still unofficial. We can discuss more tomorrow.<\/span><\/li><\/ul><\/ul><li>What can the ASUC Senate can do for COSE/<span style=\"color: rgb(153, 51, 0);\">CalCentral<\/span>?<\/li><li><span style=\"color: rgb(153, 51, 0);\">How much focus should be on COSE vs CalCentral?<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">How is presenting to the ASUC Senate different from talking with COSE?<\/span><\/li><ul><li><span style=\"color: rgb(153, 51, 0);\">Formality<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">Big picture focus<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">Publicity<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">Larger group<\/span><\/li><li><span style=\"color: rgb(153, 51, 0);\">Cross-campus/diverse representation<br><\/span><\/li><\/ul><\/ul><h3>Tactics<\/h3><ul><li>Which facets of&nbsp;CalCentral can we present that will best meet the strategic goals above?<\/li><li>What are the possible responses COSE can expect from&nbsp;the ASUC Senate?<\/li><li><span style=\"color: rgb(153, 51, 0);\" data-mce-style=\"color: #993300;\">What can we ask from the ASUC Senate?<\/span><br><\/li><\/ul><p><\/p><hr><p><br><\/p><p><\/p><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\">Goals of meeting<\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><h2><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\"><\/span><\/span><\/h2><ul><li><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">Provide ASUC with status update on project<\/span><\/li><li><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">Provide ASUC with backround and reasons that allow them to encourage OE to increase funding for CalCentral<\/span><\/li><\/ul><h2>Review<\/h2><p>What is COSE? [Students]<\/p><p>What is CalCentral?<\/p><ul><li>Based on Sakai OAE<\/li><li>Solve student problems of lack of integration of campus tools<\/li><\/ul><p>Two opportunities for feedback on COSE and CalCentral:<\/p><p>Please come share ideas or send by email:<\/p><ul><li>Upcoming COSE meeting<\/li><li>Email<\/li><\/ul><h2><span color=\"#993300\" style=\"color: rgb(0, 0, 0); \">Status update<\/span><\/h2><h3><span color=\"#993300\" style=\"color: rgb(0, 0, 0); \">Pilot in two colleges and two student groups:<\/span><span class=\"Apple-style-span\" style=\"font-size: 13px; font-weight: normal; \">&nbsp;[Students]<\/span><\/h3><ul><li><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">http://calcentral.berkeley.edu<\/span><\/li><li><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\">Pilot colleges: CED and&nbsp;<\/span><span class=\"Apple-style-span\">CNR<\/span><\/span><\/li><li><span style=\"color: rgb(0, 0, 0); \"><span class=\"Apple-style-span\">COSE:&nbsp;https://calcentral.berkeley.edu/~COSE<\/span><\/span><\/li><li><span style=\"color: rgb(0, 0, 0); \"><span class=\"Apple-style-span\">Student Group Forum<\/span><\/span><\/li><\/ul><div>Quote from a pilot student<\/div><h3 data-mce-style=\"font-size: 16px; margin-top: 1em; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; font-weight: bold; padding: 0px;\" style=\"font-size: 16px; margin-top: 1em; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; font-weight: bold; padding: 0px;\"><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">High-Level Student Goals for CalCentral<\/span><\/h3><ul><li>In response to student input<\/li><li>Provide links OE proposals<\/li><ul><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Advisor\u2019s Toolkit - Medium term<\/span><\/li><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Communications &amp; Knowledgebase<\/span><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">&nbsp;(Targeted messaging)- Medium term<\/span><\/li><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Academic Planning - Long term<\/span><\/li><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Bill Paying<\/span><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">&nbsp;- Long term<\/span><\/li><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Academic Commons Expansion - Short term<\/span><\/li><li><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Transition of&nbsp;separate campus websites into CalCentral<\/span><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">&nbsp;<\/span><span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">- Short term, needs advocate<\/span><\/li><\/ul><\/ul><p>Short term goals<br><\/p><ul><li>Too many messages -- only send /show what's relevant to me<\/li><li style=\"font-size: 16px; font-weight: bold; \"><span class=\"Apple-style-span\" style=\"font-size: 13px; font-weight: normal; \">Remind me of important tasks and events<\/span><\/li><\/ul><div><div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><\/div><p style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \"><\/p><\/div><div>Implications<\/div><div><ul style=\"margin-top: 1em; margin-right: 1em; margin-bottom: 1em; margin-left: 2em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \"><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: disc; list-style-position: outside; list-style-image: initial; font-size: 16px; font-weight: bold; \"><span class=\"Apple-style-span\" style=\"font-size: 13px; font-weight: normal; \">Contexts for each pilot college<\/span><\/li><li>Data for each student<\/li><li>Include students in campus calendar system (<span class=\"Apple-style-span\" style=\"font-family: Verdana; line-height: normal; font-size: small; \">Communications -&nbsp;<\/span>Productivity Suite)<\/li><\/ul><\/div><p style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \"><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">Challenges<\/span><\/p><ul style=\"margin-top: 1em; margin-right: 1em; margin-bottom: 1em; margin-left: 2em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; \"><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: disc; list-style-position: outside; list-style-image: initial; \">Campus data quality<\/li><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: disc; list-style-position: outside; list-style-image: initial; \">Schedule of campus calendar project<\/li><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: disc; list-style-position: outside; list-style-image: initial; \">Historical silo model of funding<\/li><li style=\"margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; list-style-type: disc; list-style-position: outside; list-style-image: initial; \">Dependence on Sakai OAE development and schedule<\/li><\/ul><h3><span style=\"color: rgb(0, 0, 0); \"><span color=\"#993300\" data-mce-style=\"color: #993300;\" style=\"color: #993300;\">OE<\/span><\/span><\/h3><p><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \"><\/span><\/p><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><span style=\"font-size: small; color: rgb(0, 0, 0); \">Relationship between CalCentral and Operational Excellence<\/span><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><span style=\"font-size: small; color: rgb(0, 0, 0); \">Outstanding proposals (OE Initiatives):<\/span><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><br><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><span style=\"font-size: small; color: rgb(0, 0, 0); \">CalCentral addresse many OE themes<\/span><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; \"><span size=\"2\" data-mce-style=\"font-size: x-small;\" style=\"font-size: x-small;\">In initials assessment, CalCental was most impactful and most important of any campus project<\/span><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; \"><br><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; \"><span size=\"2\" data-mce-style=\"font-size: x-small;\" style=\"font-size: x-small;\">Five OE initiatives<\/span><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><ul><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Advisor\u2019s Toolkit<\/span><\/li><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Communications &amp; Knowledgebase<\/span><\/li><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Academic Planning<\/span><\/li><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Bill Paying<\/span><\/li><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Academic Commons Expansion<\/span><\/li><li><span style=\"font-size: small; color: rgb(0, 0, 0); \">Transition of&nbsp;separate campus websites into CalCentral<\/span><\/li><\/ul><\/div><div style=\"color: rgb(0, 0, 0); font-family: Verdana; line-height: normal; font-size: medium; \"><\/div><p><\/p><p><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">OE funding is under consideration<\/span><\/p><p><span class=\"Apple-style-span\" style=\"color: rgb(0, 0, 0); \">WIthout further funding, bSpace will be replaced by a new version of Sakai, which will lack the features students have requested<\/span><\/p><h2>How Can ASUC Help Student Needs get Met?<\/h2><p>Advoacate for funding. Who can they contact?<\/p><ul><li>John Wilton<\/li><li>Shel Waggener<\/li><li>Kathy Koshland<\/li><li>Harry Le Grande<\/li><\/ul><p><img id=\"widget_ggadget_id4944794\" class=\"widget_inline\" style=\"display: block; padding: 10px; margin: 4px;\" src=\"/devwidgets/ggadget/images/ggadget.png\" data-mce-src=\"devwidgets/ggadget/images/ggadget.png\" data-mce-style=\"display: block; padding: 10px; margin: 4px;\" border=\"1\"><br><\/p>",
+      "_lastModified": 1316738160391,
+      "_createdBy": "675750",
+      "_path": "iT2T3isSyb/id2070213/autosave"
     }
   },
-  "activityFeed":{
-    "_created":1330571104564,
-    "_id":"V90YMGNLEeGBU00OqeXzCg+",
-    "_lastModifiedBy":"admin",
-    "_lastModified":1330571104564,
-    "_createdBy":"admin",
-    "_path":"kvhQ4SYeKub/activityFeed",
-    "2012-02-29-19-2e7256ef7b96d67317857e115020203c047136f1":{
-      "sling:resourceType":"sakai/activity",
-      "_created":1330571105239,
-      "sakai:activity-source":"kvhQ4SYeKub",
-      "_id":"WEQ-cGNLEeGBU00OqeXzCg+",
-      "_lastModifiedBy":"admin",
-      "sakai:activity-type":"pooled content",
-      "sakai:activity-appid":"default",
-      "_lastModified":1330571105239,
-      "sakai:activity-actor":"873558",
-      "sakai:activityMessage":"UPDATED_CONTENT",
-      "_createdBy":"admin",
-      "_path":"kvhQ4SYeKub/activityFeed/2012-02-29-19-2e7256ef7b96d67317857e115020203c047136f1"
+  "id944982": {
+    "_created": 1316738429208,
+    "_id": "otr5gOV8EeCxstiaqeXzCg+",
+    "_lastModifiedBy": "675750",
+    "_lastModified": 1316738429208,
+    "_createdBy": "675750",
+    "_path": "iT2T3isSyb/id944982",
+    "ggadget": {
+      "width_unit": "px",
+      "_created": 1316738429211,
+      "height": 400,
+      "_id": "ottusOV8EeCxstiaqeXzCg+",
+      "_lastModifiedBy": "675750",
+      "_lastModified": 1316738429211,
+      "width": 600,
+      "_createdBy": "675750",
+      "border_color": "cccccc",
+      "_path": "iT2T3isSyb/id944982/ggadget",
+      "url": "http://www.gmodules.com/ig/ifr?url=http://www.google.com/ig/modules/todo.xml&up_title=To%20Do%20List&up_new_entry_box=2&up_todos=&up_selected=0&up_col=1&synd=open&w=320&h=200&title=__UP_title__&lang=en&country=ALL&border=%23ffffff%7C3px%2C1px+solid+%23999999&output=html",
+      "border_size": 0
     }
   },
-  "id2982652":{
-    "_created":1330571616550,
-    "_id":"iQgcYGNMEeGBU00OqeXzCg+",
-    "_lastModifiedBy":"873558",
-    "_lastModified":1330571616550,
-    "_createdBy":"873558",
-    "_path":"kvhQ4SYeKub/id2982652",
-    "editing":{
-      "_created":1330571616882,
-      "time":1333098810132,
-      "_id":"iTrFIGNMEeGBU00OqeXzCg+",
-      "_lastModifiedBy":"873558",
-      "_lastModified":1330571616882,
-      "_createdBy":"873558",
-      "_path":"kvhQ4SYeKub/id2982652/editing"
+  "id7858049": {
+    "_created": 1316624475364,
+    "_id": "URJKQORzEeCByGYiqeXzCg+",
+    "_lastModifiedBy": "675750",
+    "page": "Default Content",
+    "_lastModified": 1316624475364,
+    "_createdBy": "675750",
+    "_path": "iT2T3isSyb/id7858049",
+    "editing": {
+      "_created": 1316624492387,
+      "time": 1316650042081,
+      "_id": "WzfLMORzEeCByGYiqeXzCg+",
+      "_lastModifiedBy": "675750",
+      "_lastModified": 1316624842480,
+      "_createdBy": "675750",
+      "_path": "iT2T3isSyb/id7858049/editing"
+    },
+    "autosave": {
+      "_created": 1316624507428,
+      "_id": "ZC7eQORzEeCByGYiqeXzCg+",
+      "page": "<h1>Agenda for planning meeting<br>Date: Thursday September 22, 2011<\/h1><p><strong>Target event:<\/strong> Presentation at ASUC Senate meeting for September 28, 2011<\/p><h2><hr>Agenda items<\/h2><h3>Strategy<\/h3><ul><li>Why present to the ASUC Senate?<\/li><li>Does COSE have a responsibility to the Senate or ASUC?<\/li><li>What can the Senate do for COSE?<\/li><\/ul><h3>Tactics<\/h3><ul><li>Which facets of CalCentral should we highlight?<\/li><li>How might the Senate respond to these facets?<\/li><\/ul>",
+      "_lastModifiedBy": "675750",
+      "_lastModified": 1316624822434,
+      "_createdBy": "675750",
+      "_path": "iT2T3isSyb/id7858049/autosave"
     }
   },
-  "id7492000":{
-    "_created":1332563864661,
-    "_id":"GXD4UHVrEeGyFc8AqeXzCg+",
-    "_lastModifiedBy":"873558",
-    "_lastModified":1332563864661,
-    "_createdBy":"873558",
-    "_path":"kvhQ4SYeKub/id7492000",
-    "editing":{
-      "_created":1332563864690,
-      "time":1332589049765,
-      "_id":"GXVlIHVrEeGyFc8AqeXzCg+",
-      "_lastModifiedBy":"873558",
-      "_lastModified":1332563864690,
-      "_createdBy":"873558",
-      "_path":"kvhQ4SYeKub/id7492000/editing"
-    }
-  },
-  "id8472515":{
-    "_created":1330571114240,
-    "_id":"XaGwAGNLEeGBU00OqeXzCg+",
-    "_lastModifiedBy":"873558",
-    "_lastModified":1330571114240,
-    "_createdBy":"873558",
-    "_path":"kvhQ4SYeKub/id8472515",
-    "editing":{
-      "_created":1330571114563,
-      "time":1333098438212,
-      "_id":"XdL5MGNLEeGBU00OqeXzCg+",
-      "_lastModifiedBy":"873558",
-      "_lastModified":1330571244573,
-      "_createdBy":"873558",
-      "_path":"kvhQ4SYeKub/id8472515/editing"
+  "id718588": {
+    "_created": 1316625405168,
+    "_id": "e0cfAOR1EeCByGYiqeXzCg+",
+    "_lastModifiedBy": "675750",
+    "_lastModified": 1316625405168,
+    "_createdBy": "675750",
+    "_path": "iT2T3isSyb/id718588",
+    "editing": {
+      "_created": 1316625405171,
+      "time": 1316650604798,
+      "_id": "e0eUMOR1EeCByGYiqeXzCg+",
+      "_lastModifiedBy": "675750",
+      "_lastModified": 1316625405171,
+      "_createdBy": "675750",
+      "_path": "iT2T3isSyb/id718588/editing"
     }
   }
 }
