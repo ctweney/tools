@@ -1,0 +1,24 @@
+May 16 2012 - Ann Arbor, day 2
+
+Search & Access Control
+=======================
+
+
+
+The Problems with Sparse
+========================
+
+- need to replace it, but do it one piece at a time (ie one domain model item at a time)
+
+* Creating a manager class for each domain model object (eg Activity, Pooled Content, User, Group, Message). This will present an opportunity to inject different impls to allow for integration. 
+
+- all the manager objects will need interfaces to allow pluggable replacement
+
+Branden's presentation on Infinispan
+====================================
+
+nakamura core vs. sparsemap:
+nakamura core: Content Mgr, Authz Mgr, ACE Mgr
+sparsemap SPI: JDBC driver, cassandra driver, mongo driver, etc
+* we're talking about replacing sparse SPI but not the nakamura core API
+

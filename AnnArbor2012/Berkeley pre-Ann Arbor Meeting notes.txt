@@ -1,0 +1,5 @@
+Berkeley pre-Ann Arbor meeting
+5/4/2012
+
+idea for ui-server team dev: have UI team write the doc page for each new service and hand it to the server team as the spec.  doc is the spec is the unit test.   can we use markdown as input to unit tests?
+

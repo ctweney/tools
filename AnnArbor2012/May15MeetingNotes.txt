@@ -1,0 +1,131 @@
+May 15 2012 - Ann Arbor
+
+API design working team
+James, Carl, Zach, Bert, Christian, Chris, Ray
+
+Basic entities:
+People
+Worlds
+Content
+Messages
+Contacts (aka "connections", see kern-2839)
+Collections
+Tags
+Activities
+
+Cross-cutting concerns:
+Browse
+Search
+Versioning
+Caching
+Paging
+Sorting
+
+REST patterns:
+
+/api/people/id/zach
+/api/people/id/zach/messages/status/unread
+/api/people/uuid/abcdef (for supporting ids integrated from outside systems)
+/api/people/privateid/johndoe (for supporting protected ids)
+
+query strings for free-text inputs, eg searches
+
+Need to support old APIs at least temporarily. Added kern-2840 to make doc servlet show deprecation info on old endpoints.
+
+List of UI feeds:
+Me feed (only the basic profile, counts, and locale actually needed by ui)
+
+* Big question of how we can make progress if we need to maintain existing API so as not to break others' code. 
+
+* General agreement among the API team that we should break radically with the old API and just help deployers update to the new code. Otherwise we'll never get beyond the existing technical debt load. 
+
+- Principle: Server will do conversion of strings to JSON objects where necessary. 
+
+Cache pattern: put an Annotation on methods that change domain object state. This annotation includes a path pattern. On servlets that have caches, subscribe them to the path pattern, and invalidate the cache when an event of interest happens. 
+
+eg 
+public class ProfileUpdateServlet
+@Affects("/system/me")
+public void updateProfile() {…}
+
+MeServlet
+@ListensFor("/system/me")
+public void invalidateCache() {…}
+
+? Does cache invalidation need to be async & maybe slow? Or can it be fully synchronous? Cache invalidation should only delete the cached item, not rebuild it, so it should be fast. Rebuilding happens on the next request for the item. 
+
+CacheControlFilter is supposed to cache requests, but seems broken. Maybe fixing it is a starting point for the cache work. 
+
+- We might reduce abuse of search by providing easy paging/sorting as a cross-cutting aspect in the servlet world. 
+
+- Need a world GET service that bundles requests
+
+- Need to bundle & simplify file creation
+
+* Migration will be a concern for all redesigned APIs
+
+* New naming rules for endpoint servlets: Noun first, then action. eg "ConnectionUpdateServlet" "AclGetServlet". This is so servlets will sort nicely in the doc page. 
+
+? Sparse doesn't support the order of elements passed in as arrays - can this be fixed? 
+
+
+List of important UI feeds:
+
+General (all pages)
+-------------------
+/system/me
+/system/batch
+/var/templates/worlds
+widget settings
+
+Landing Page
+------------
+/var/search/activity/all
+/var/search/public/random-content
+/tags/directory.tagged.json
+
+Me
+---------------
+/~userid
+/message.counts
+pubspace
+privspace
+/cropit
+
+Dashboard
+---------
+/var/search/pool/me/related-content
+/var/search/myrelatedgroups
+/var/contacts/relatedcontacts
+recent content (3) search
+recent memberships (3)
+recent contacts (3)
+
+Messages
+--------
+/var/message/box/category-all
+/~userid/message.create.html
+/var/search/usergroups
+
+Profile
+--------
+authprofile.profile.json
+
+
+
+? is there a way to easily distinguish system-level endpoints from domain model endpoints in the servlet doc page?
+
+running Nico and Christian's magic user data loader:
+Get the code:
+git clone git://github.com/sakaiproject/OAE-model-loader.git
+
+Install dependencies:
+brew install node
+brew install cairo
+npm install canvas
+
+Now run the loader:
+node generate.js
+node loaddata.js 10 http://localhost:8080 admin 10
+node main.js to see graphs
+
