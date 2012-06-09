@@ -1,0 +1,18 @@
+May 18 meeting notes - Ann Arbor
+
+My focus for next 3 wks: Activity domain model
+--make a bundle with pluggable interfaces for the collaborators needed by activity domain, e.g storage layer, auth, etc
+--work on kern-2844 to improve cache control filter's config language and make invalidation possible (@Cacheable, @InvalidatesCache, or maybe interfaces to express the same thing)
+--flesh out Branden's relational storage model for activities
+--explore way to make hibernate's session factory shareable with other components -- also consider eclipselink as alternative orm
+
+Branden: API for synchronous indexing of entities; key-entity storage; REST front-end
+
+Zach: protocol buffers -> voldemort; jenkins -> integratoin tests; conference workshop prep; v1.3 release activities
+
+Carl: Sensei db investigation (we assume)
+
+Ray: fixing Solr's especially painful queries
+
+* pure data objects to be expressed as peas not beans (ie with public members, no getters/setters)
+

@@ -22,3 +22,34 @@ nakamura core: Content Mgr, Authz Mgr, ACE Mgr
 sparsemap SPI: JDBC driver, cassandra driver, mongo driver, etc
 * we're talking about replacing sparse SPI but not the nakamura core API
 
+- GridFS to support Content Mgr implementation. Hierarchical API. uses java.io.File API. 
+
+- TreeCache a more performant alternative structured like sparse (trees of nodes with properties)
+
+- Growing with infinispan : separate cache as a keyspace for each domain object; easy to add new cache types
+
+
+Zach on NoSQL options
+=====================
+
+Query, Data Model, Cluster, Consistency
+
+neo4j: query and data model and consistency excellent (graph is natural for many enterprise apps); no clustering at all
+
+Cassandra
+querying only by key; data model not transparent and hard to use; clustering excellent; consistency a drawback; write speed super high
+
+Voldemort
+no querying; clustering excellent; no transactions or atomicity
+
+Mongo
+querying very easy; document-oriented data model; javascript-based client language; no transactions, but a single doc is atomic; clustering based on creating shards, but somewhat complex (doesn't self-organize like cassandra and voldemort)
+
+
+
+========================
+
+near-term priority is to swap in a new backend underneath ContentManager API (to replace ContentManagerImpl/JDBCStorageClient)
+
+longer-term we will go thru domain models adding one domain object and manager at a time (with a new backend for the object where applicable)
+

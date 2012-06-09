@@ -1,0 +1,72 @@
+May 17 Ann Arbor meeting
+
+* need to come up with decision criteria for the sparse replacement platform
+
+short-term goal: 
+- maintain current sparse api while doing work outside it (domain models)
+- drop current sparse impl to reduce maintenance drain -- meaning some other product to go under the sparse api shim
+
+medium to long-term:
+- maintain fast simple dev of new functionality w/minimal developer overhead -- in the style of sling+jackrabbit with server-side scripting
+-not constrained to implement that goal with current sparse api or with sling
+-not bound to our current hacked-up version of sling
+
+constraints:
+- licensing has to be acceptable to the commercial affiliates
+- platforms we choose have to have a strong support community outside Sakai
+(?) do we allow for split storage systems? ie does the storage under the sparse shim have to be the same as the storage for all the different domain models?
+(?) are we allowed to force deployers to store in a db other than oracle (or postgres, etc)? -- if we're constrained to store in sql (at the bottom layer) then the list of potential nosql solutions is limited to voldemort and oracle. 
+- preference of team is for nosql systems that allow option of sql underneath
+- storage system must support fast tree traversal (for parts of the system that are hierarchical)
+
+
+=================================
+
+
+after lunch, new direction:
+
+- we'll stay on sparse as is, living with its bugs. 
+- we'll build domain models one area at a time, gradually replacing all. there will be a migration for each domain. 
+
+Domains in need of modeling and the order in which we'll tackle them (rough release numbers):
+1 - Activities
+1 - Connections
+2 - Pooled Content
+2 - People
+3 - Messages
+3 - Sakai Docs
+4 - Worlds
+4 - Comments
+4 - Collections
+5 - Discussions
+5 - Tags
+6 - Bags (unstructured content)
+
+In release 1 we'll establish:
+	* the code pattern for domain modeling
+	* the storage system(s) to be used
+Before the conference we'll do research to evaluate storage systems and code approaches. 
+
+As we do each domain model we'll rewrite the client/server API to suit. 
+
+* Domain models should never have dependencies on any storage implementation. 
+  ---> We enforce that by having API bundles for domain interface definitions, with no dependencies to anything implementation-related. 
+
+- need to answer Q of whether we can use storage that doesn't rest on sql
+
+criteria for storage system selection:
+- right license
+- good for developers (clean API) 
+- good for operations
+- strong community
+- low overhead for deployers
+- proven track record
+- performance/scalability characteristics
+- optimistic locking
+- transactions
+- referential integrity (?) - some question as to whether we really need this
+- multi-tenancy
+
+* look at benefits of in-memory write-through caches (which persist the data transparently to the client) eg ehcache, infinispan 
+
+
