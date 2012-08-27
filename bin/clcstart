@@ -14,7 +14,7 @@ if [ -z "$2" ]; then
 fi
 
 mkdir -p logs
-mvn clean compile -Dmaven.test.skip=true
+mvn clean package -Dmaven.test.skip=true
 
 if [ "$WIPE" = "wipe" ]; then
 	mvn flyway:clean
@@ -23,4 +23,6 @@ fi
 mvn flyway:migrate
 
 nohup mvn jetty:run -Dcom.sun.management.jmxremote > logs/jetty.log 2>&1 &
+sleep 5
+tail -f logs/jetty.log&
 
