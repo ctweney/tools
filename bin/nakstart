@@ -33,5 +33,5 @@ mkdir -p sling/logs
 
 . tools/version
 
-nohup java -Dfile.encoding=UTF8 -Xmx512m -XX:MaxPermSize=256m -server -Xdebug -Xrunjdwp:transport=dt_socket,address=9001,server=y,suspend=n -Dcom.sun.management.jmxremote -jar app/target/org.sakaiproject.nakamura.app-${K2VERSION}.jar > sling/logs/stdout.log 2>&1 &
+nohup java -Dfile.encoding=UTF8 -Xmx600m -XX:MaxPermSize=300m -server -Xdebug -Xrunjdwp:transport=dt_socket,address=9001,server=y,suspend=n -Dcom.sun.management.jmxremote -jar app/target/org.sakaiproject.nakamura.app-${K2VERSION}.jar > sling/logs/stdout.log 2>&1 &
 

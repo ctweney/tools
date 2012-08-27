@@ -1,0 +1,26 @@
+#!/bin/bash
+
+DIRECTORY="$1"
+
+if [ -z "$1" ]; then
+	DIRECTORY=~/dev/calcentral
+fi
+
+cd $DIRECTORY
+
+WIPE="$2"
+if [ -z "$2" ]; then
+	WIPE=""
+fi
+
+mkdir -p logs
+mvn clean compile -Dmaven.test.skip=true
+
+if [ "$WIPE" = "wipe" ]; then
+	mvn flyway:clean
+fi
+
+mvn flyway:migrate
+
+nohup mvn jetty:run -Dcom.sun.management.jmxremote > logs/jetty.log 2>&1 &
+
