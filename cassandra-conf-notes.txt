@@ -1,0 +1,269 @@
+Keynote
+
+key pts about Cassandra:
+
+C* well adapted for time series data 
+eg server logs, activity logs (*)
+
+write performance 
+
+multi-datacenter
+
+distributed counters
+easy solution: master/slave
+but in multi-dc situation, crossing the wan boundary to call the master is very expensive
+
+hadoop support (*analytics)
+
+multitenancy
+eg one segment of cluster may have solid state disk for large hot datasets,
+with another set using conventional disks for smaller hot & larger cold dataset
+
+enterprise search (=Solr)
+
+simplereach uses c* for analytics on twitter (all of it) 
+lots of writes, batched analytic workflow
+
+at Netflix, linear increase in write performance w/add'l nodes (up to 300 nodes w/repl factor 3)
+
+log-structured storage engine
+incoming writes get grouped in ram and then streamed to disk
+
+c* 0.6 had opposite of classical db performance: slow reads, fast writes
+
+in c* 1.0, reads and writes are balanced in speed (reads just slightly slower)
+
+ttl - can specify time data will be kept
+
+compression - easy b/c of log-structure storage, b/c writes don't overlap
+
+present release: self-tuning row cache, mixed ssd/hdd support, row level isolation
+
+c* now has 3 parts of ACID: A, I, and D
+ACID consistency = referential integrity. Never on the board for c*, since c* avoids joins. 
+Distributed system consistency = consistency, availability, partiion tolerance. C* can provide this. No matter which node we talk to we alwasy get the current data. 
+
+future: 
+  - concurrent schema changes (ie multiple clients changing schema at once)
+  - JBOD support
+  - virtual nodes
+  - cql improvements. strictly for realtime query. no joins, no subqueries, aggregation, very limited order by. Ordering is specified at modeling time (avoiding need to sort millions of rows). Compound primary keys supported. 
+  - collection support. Convenience for denormalizing data. 
+
+  CREATE TABLE users (
+    id uuid PRIMARY KEY, 
+	...
+	email-addresses set<text>
+	); 
+
+  UPDATE users SET email-addresses = email-addresses + { 'foo@foo.com', ... }; 
+
+  - when a coll gets appended in this way only the new data gets written. 
+
+=====================
+
+10:30 session - Adrian Cockcroft (Netflix architect) 
+on performance & scalability in EC2
+
+1 million writes/sec with 288 m1.xlarge 4cpu 15g ram 8 ecu instances repl factor = 3
+http://techblog.netflix.com/2011/11/benchmarking-cassandra-scalability-on.html
+
+blah blah cloud blah
+
+netflix started out IO bound working around problems in EC2, put pressure
+on amazon to offer SSDs
+
+old servers: 500 iops; new: 100000+ iops, 1gig/s throughput (hi1.4xlarge)
+
+ssd nodes allowed 15 c* nodes to do the work of 48 cassandra nodes with 36 memcache in old hdd system
+
+Jenkins automation:
+	- jmeter load driver
+	- asgard provisioning
+	- priam instance mgmt
+	- runs cluster for 1 hr then shuts everything down
+
+logging cluster @ netflix is 72 c* nodes writing 250K writes/sec
+
+Priam - c* automation tool
+	- writes continuous backup of sstables to s3
+
+Astyanax - alternative c* client for java
+https://github.com/Netflix/astyanax
+	- is aware of c* tokens so it can shortcut a network hop when writing
+
+data denormalized over many clusters, so joins are impossible. 
+solution: read backup files using Hadoop 
+bulk data pipeline from c*:
+http://techblog.netflix.com/2012/02/aegisthus-bulk-data-pipeline-out-of.html
+high-throughput raw sstable processing
+extract, transform, and load into teradata
+
+netflix is releasing its PaaS components on github
+* being on github leads to peer pressure for code cleanup, external contrib
+
+chaos monkey - robustness tester. Randomly kills instances to make sure redundancy systems work. 
+
+latency monkey - inserts random latency 
+
+asgard - replaces aws console for scale
+
+=======================
+
+11:30 building a cassandra app from scratch
+Patrick McFadin
+
+concept: video sharing site: post video, view, comment, rate, tag
+
+entity tables: basic storage unit. 
+	Users: pass, fname, lname. Secondary idx on fname/lname for lookup. 
+	Videos: uuid (pk), video name, username, description, tags (stored in some delimited format, or in c* 1.2 you could use a collection). idx on username not the best plan b/c of c* issues with high cardinality (most users will have few vids) on secondary indexes. 
+	see http://pkghosh.wordpress.com/2011/03/02/cassandra-secondary-index-patterns/ for more on cardinality problem. 
+	Comments: video uuid, username<timestamp>, username2<timestamp>, username3<timestamp...>. usernames stored as composite cols, value of which is the text of the comment. use getSlice() to pull some or all comments. 
+	Rating: video uuid, rating_count counter, rating_total counter. Counts are a single operation (increment/decrement). No distributed locking. Counters can't be mixed with other types in a table (?). 
+	Video Event: video uuid + username (compound pk), start_<timestamp>, stop_<timestamp>, start_<timestamp>...etc. Can be used for usage analytics later. 
+
+query tables: denormalize for fast lookup. 
+	Lookup video by username: username pk, video uuid<timestamp>. column slice for timespan from x to y. 
+	Video by tag: tag pk, videoid, videoid... etc. Integrity of this index table has to be maintained in app logic (when tags are deleted etc). Tags must be updated in Video and Tag at same time. 
+
+one query, one table 
+
+* don't be afraid of writing to multiple tables, that's what c* is good at. 
+
+code exampes at github.com/pmcfadin
+
+
+==================
+
+c* query performance deep dive 
+with Aaron Morton
+www.thelastpickle.com
+
+latency at 2 levels: read of individual column family, and latency of entire request
+
+write path:
+	1. append to commit log
+	
+	2. merge with memtable (which gets flushed to disk later)
+
+	flush will block if memtable_flush_queue_size operations get queued up
+
+	3. write to commit log if durable_writes is enabled
+
+write path with secondary indexes is considerably more expensive
+
+deletes also involve reads if secondary indexes are present
+
+read path:
+	Check BloomFilter
+	Read KeyCache
+	Read Index Samples, seek and partial scan - Index.db
+
+	row_cache_size_in_mb affects size of row cache, which removes all disk io when it hits. row cache caches the entire row, so use it sparingly, esp in wide rows or rows with very big columns
+
+	a narrow query on a wide row performs better. Fastest is to read columsn that are adjacent. 
+
+	reading reverse is orders of magnitude slower than reading in the natural order of columns. if doing time series things, get the order of columns correct!
+
+===================
+
+Big Data @ Disney
+w/Arun Jacobs
+
+Disney uses multiple data stores (mongo, cassandra, others)
+DMP enables message routing into different datastores. Routing specifies which data store (or stores) that data will be written to.  Declarative routing language (DSL using JSON)
+
+time-indexed view of error logs from app servers. indexed by time and severity. ops teams needed real-time access, analysts needed later access to think about trends in errors. 
+about 100 app servers use central log service (CLS) to log via log4j appenders. stored to File store (HDFS) and KV store (C*). 
+stored X records of log data in supercolumns on minute boundaries. 
+
+wide column schemas useful for tracking variable attributes across entities
+eg. customers (segmentation data) application state, recommendation engines, etc
+
+c* is a key + tuple scheme
+
+need to think carefully about hardware to use for KV store cluster and Query Service cluster. ram/disk/cpu specs matter. more ram and less disk is better for cassandra (as compared to hadoop, which needs more disk)
+
+================
+
+cassandra & solr
+Matt Stump
+
+FUD about nosql: no ad-hoc queries, no indexes, no range q's, limited tooling, code complexity
+
+Solr+Cassandra - when data is written to c* it's automatically indexed in solr. voila, ad-hoc queries and the rest of it is available in solr. 
+
+rest api for solr querying: 
+localhost:8983/solr/keyspace.colfamily/select?q=name:foo
+
+to index wide cols (in solr schema.xml):
+<dynamicField name="wide_*" type="string" ...>
+
+solr gives: full-text index, trigrams, rich data formats, interop (rest, csv, xml, json), geo-spatial search, highlighting, auto-suggest, faceted search
+
+there are ORM layers that work on top of solr (which?)
+
+==================
+
+Data modeling
+Matt Dennis @ Datastax
+
+columns more properly called tuples
+
+banking app:
+	credit_account(acct, delta)
+	get_account_balance(acct)
+	transfer_funds()
+
+accounts column family:
+	all_balls | xact_id0 | xact_id1
+	$123.45   | "details"| "details"
+
+	"details" = everything to make the change
+    xact_id0 is a hash("details") => unique idempotent id of everything in details
+
+get_account_balance => get all details, then apply deltas to all_balls base
+
+entire acct is 1 row = 1 read
+
+credit_account => write details to accounts CF (new column)
+
+problem is, each row grows unbounded, meaning more math to comput base+deltas.
+need to recalculate the base safely from time to time. 
+
+consolidating single master works well here (still not a single point of failure) 
+master can fail, others are just slower. 
+
+pick # of processors: hash acctID mod num_consolidators; 
+only the assigned master can update the base col
+read row for acct, calculate new base, write new base + delete cols that made up the new base. this works now that c* has row-level isolation. 
+read at consistency level = all the 1st time an acct is seen by the processor
+(this process amounts to checkpointing)
+
+transfer_funds: source & destination acct can be on different nodes, so how to maintain consistency?
+common approach is use transaction log:
+
+xact_log column family: 
+node_token pk  |  itmeuuid(xact0)  | timeuuid(xact1) |  timeuuid(xact2)
+               |  "details"        | "detail" ... etc
+(same "details" as previously)
+node_token randomly chosen from set of nodes
+write to xact_log CF is a commit
+then each node runs a cron job that periodically queries a slice of its row 
+node replays any messages found in its entirety & deletes the column
+
+xfer_funds(from, to, delta)
+write details to xactlog CF
+in parallel, write details for from and to acct rows
+delete details from xact_log CF (could be done after client response)
+
+other uses for consolidation pattern: base & delta need not represent money. eg:
+* character inventory in games
+* portfolios of stock
+* escrow
+* anything combinable/aggregatable 
+
+c* favors availability, scalability, and durability over other desirable traits: consistency and isolation, which is the advantage of single machines. single machines create single point of failure, can only scale as big as that machine can go. 
+
+

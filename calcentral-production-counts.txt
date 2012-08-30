@@ -1,0 +1,250 @@
+Content:
+
+mysql> desc cn_css;
++-------+--------------+------+-----+---------+----------------+
+| Field | Type         | Null | Key | Default | Extra          |
++-------+--------------+------+-----+---------+----------------+
+| id    | int(11)      | NO   | PRI | NULL    | auto_increment | 
+| rid   | varchar(32)  | NO   | MUL | NULL    |                | 
+| cid   | varchar(64)  | NO   |     | NULL    |                | 
+| v     | varchar(780) | NO   | MUL | NULL    |                | 
++-------+--------------+------+-----+---------+----------------+
+
+mysql> select count(rid) from cn_css;
++------------+
+| count(rid) |
++------------+
+|     563527 | 
++------------+
+
+mysql> desc cn_css_w;
++------------------------------+--------------+------+-----+---------+-------+
+| Field                        | Type         | Null | Key | Default | Extra |
++------------------------------+--------------+------+-----+---------+-------+
+| rid                          | varchar(32)  | NO   | PRI | NULL    |       | 
+| sling_resourceType           | varchar(780) | YES  | MUL | NULL    |       | 
+| sakai_pooled_content_manager | varchar(780) | YES  | MUL | NULL    |       | 
+| sakai_messagestore           | varchar(780) | YES  | MUL | NULL    |       | 
+| sakai_type                   | varchar(780) | YES  | MUL | NULL    |       | 
+| sakai_marker                 | varchar(780) | YES  | MUL | NULL    |       | 
+| sakai_tag_uuid               | varchar(780) | YES  | MUL | NULL    |       | 
+| sakai_contactstorepath       | varchar(780) | YES  | MUL | NULL    |       | 
+| sakai_state                  | varchar(780) | YES  | MUL | NULL    |       | 
+| created                      | varchar(780) | YES  | MUL | NULL    |       | 
+| sakai_category               | varchar(780) | YES  | MUL | NULL    |       | 
+| sakai_messagebox             | varchar(780) | YES  | MUL | NULL    |       | 
+| sakai_from                   | varchar(780) | YES  | MUL | NULL    |       | 
+| sakai_subject                | varchar(780) | YES  | MUL | NULL    |       | 
+| parenthash                   | varchar(780) | YES  | MUL | NULL    |       | 
+| firstName                    | varchar(780) | YES  | MUL | NULL    |       | 
+| lastName                     | varchar(780) | YES  | MUL | NULL    |       | 
++------------------------------+--------------+------+-----+---------+-------+
+
+mysql> select count(rid) from cn_css_w w;                                        
++----------+
+| count(*) |
++----------+
+|  1170159 | 
++----------+
+
+mysql> select count(rid) from cn_css_w w where sling_resourceType is null;     
++------------+
+| count(rid) |
++------------+
+|     864612 | 
++------------+
+
+mysql> select count(rid) from cn_css_w w where sling_resourceType = 'sakai/pooled-content';         
++----------+
+| count(*) |
++----------+
+|     7136 | 
++----------+
+
+mysql> select count(rid) from cn_css_w w where sling_resourceType = 'sakai/message';
++------------+
+| count(rid) |
++------------+
+|      14076 | 
++------------+
+
+
+mysql> select count(rid) from cn_css_w w where sling_resourceType = 'sakai/user-home';
++------------+
+| count(rid) |
++------------+
+|       4363 | 
++------------+
+
+mysql> select count(rid) from cn_css_w w where sling_resourceType = 'nt:unstructured';
++------------+
+| count(rid) |
++------------+
+|      19312 | 
++------------+
+
+mysql> select count(rid) from cn_css_w w where sling_resourceType = 'sakai/activity';
++------------+
+| count(rid) |
++------------+
+|      30414 | 
++------------+
+
+mysql> select count(rid) from cn_css_w w where sling_resourceType = 'sakai/activity-post';
++------------+
+| count(rid) |
++------------+
+|      12127 | 
++------------+
+
+mysql> select count(rid) from cn_css_w w where sling_resourceType = 'sakai/contact';
++------------+
+| count(rid) |
++------------+
+|       1358 | 
++------------+
+
+mysql> select count(rid) from cn_css_w w where sling_resourceType = 'sakai/group-home';
++------------+
+| count(rid) |
++------------+
+|        465 | 
++------------+
+
+mysql> desc cn_css_b;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| rid   | varchar(32) | NO   | PRI | NULL    |       | 
+| b     | mediumblob  | YES  |     | NULL    |       | 
++-------+-------------+------+-----+---------+-------+
+
+mysql> select count(rid) from cn_css_b;
++------------+
+| count(rid) |
++------------+
+|    1246001 | 
++------------+
+
+=======================
+
+Authorizables:
+
+mysql> desc au_css;; 
++-------+--------------+------+-----+---------+----------------+
+| Field | Type         | Null | Key | Default | Extra          |
++-------+--------------+------+-----+---------+----------------+
+| id    | int(11)      | NO   | PRI | NULL    | auto_increment | 
+| rid   | varchar(32)  | NO   | MUL | NULL    |                | 
+| cid   | varchar(64)  | NO   |     | NULL    |                | 
+| v     | varchar(780) | NO   | MUL | NULL    |                | 
++-------+--------------+------+-----+---------+----------------+
+
+mysql> select count(rid) from au_css;
++------------+
+| count(rid) |
++------------+
+|       7405 | 
++------------+
+
+mysql> desc au_css_w;
++-------------------+--------------+------+-----+---------+-------+
+| Field             | Type         | Null | Key | Default | Extra |
++-------------------+--------------+------+-----+---------+-------+
+| rid               | varchar(32)  | NO   | PRI | NULL    |       | 
+| rep_principalName | varchar(780) | YES  | MUL | NULL    |       | 
+| type              | varchar(780) | YES  | MUL | NULL    |       | 
+| parenthash        | varchar(780) | YES  | MUL | NULL    |       | 
++-------------------+--------------+------+-----+---------+-------+
+
+mysql> select count(rid) from au_css_w;                 
++------------+
+| count(rid) |
++------------+
+|       9658 | 
++------------+
+
+mysql> select count(rid) from au_css_w where type = 'g';
++------------+
+| count(rid) |
++------------+
+|       5295 | 
++------------+
+
+mysql> select count(rid) from au_css_w where type = 'u';
++------------+
+| count(rid) |
++------------+
+|       4363 | 
++------------+
+
+mysql> desc au_css_b;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| rid   | varchar(32) | NO   | PRI | NULL    |       | 
+| b     | mediumblob  | YES  |     | NULL    |       | 
++-------+-------------+------+-----+---------+-------+
+
+mysql> select count(rid) from au_css_b;
++------------+
+| count(rid) |
++------------+
+|       9575 | 
++------------+
+
+========================
+
+ACLs:
+
+
+mysql> desc ac_css;
++-------+--------------+------+-----+---------+----------------+
+| Field | Type         | Null | Key | Default | Extra          |
++-------+--------------+------+-----+---------+----------------+
+| id    | int(11)      | NO   | PRI | NULL    | auto_increment | 
+| rid   | varchar(32)  | NO   | MUL | NULL    |                | 
+| cid   | varchar(64)  | NO   |     | NULL    |                | 
+| v     | varchar(780) | NO   | MUL | NULL    |                | 
++-------+--------------+------+-----+---------+----------------+
+4 rows in set (0.01 sec)
+
+mysql> select count(id) from ac_css;
++-----------+
+| count(id) |
++-----------+
+|     28055 | 
++-----------+
+
+mysql> desc ac_css_b;              
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| rid   | varchar(32) | NO   | PRI | NULL    |       | 
+| b     | mediumblob  | YES  |     | NULL    |       | 
++-------+-------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> select count(rid) from ac_css_b;
++------------+
+| count(rid) |
++------------+
+|      85007 | 
++------------+
+
+mysql> desc ac_css_w; 
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| rid        | varchar(32)  | NO   | PRI | NULL    |       | 
+| parenthash | varchar(780) | YES  | MUL | NULL    |       | 
++------------+--------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> select count(rid) from ac_css_w;
++------------+
+| count(rid) |
++------------+
+|      73838 | 
++------------+
+
