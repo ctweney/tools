@@ -1,4 +1,5 @@
 #!/bin/bash
 
-curl --stderr /dev/null $1 | python -mjson.tool
+curl --stderr /dev/null $@ | python -mjson.tool
+
 
