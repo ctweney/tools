@@ -1,0 +1,4 @@
+#!/bin/bash
+
+nohup /Applications/IntelliJ\ IDEA\ 11.app/Contents/MacOS/idea > /dev/null 2>&1 &
+
