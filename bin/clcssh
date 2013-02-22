@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ssh -l ctweney ets-calcentral-$1.ist.berkeley.edu
+
