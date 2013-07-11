@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd ~/dev/calcentral
+rm -rf log/*
+
+JVM_OPTS=${CALCENTRAL_JVM_OPTS:="\-server"}
+
+bundle exec torquebox run -p=3000 --jvm-options="$JVM_OPTS" 
+
