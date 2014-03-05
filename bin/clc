@@ -3,7 +3,8 @@
 cd ~/dev/calcentral
 rm -rf log/*
 
-JVM_OPTS=${CALCENTRAL_JVM_OPTS:="\-server"}
+#unset JRUBY_OPTS
+#JVM_OPTS=${CALCENTRAL_JVM_OPTS:="\-server \-verbose:gc \-XX:+PrintGCTimeStamps \-XX:+PrintGCDetails \-XX:+UseConcMarkSweepGC \-Xms3000m \-Xmx3000m \-Xmn500m \-XX:PermSize=400m \-XX:MaxPermSize=400m"}
 
-bundle exec torquebox run -p=3000 --jvm-options="$JVM_OPTS" 
-
+bundle exec torquebox run -p=3000
+#--jvm-options="$JVM_OPTS"
