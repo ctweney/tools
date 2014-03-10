@@ -61,6 +61,188 @@
 	<key>GraphicsList</key>
 	<array>
 		<dict>
+			<key>Class</key>
+			<string>Group</string>
+			<key>Graphics</key>
+			<array>
+				<dict>
+					<key>Bounds</key>
+					<string>{{499.03434707576184, 370.50006103515625}, {79.931330472102999, 56.561256074766355}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>ID</key>
+					<integer>308</integer>
+					<key>Shape</key>
+					<string>Circle</string>
+					<key>Style</key>
+					<dict>
+						<key>fill</key>
+						<dict>
+							<key>FillType</key>
+							<integer>2</integer>
+							<key>GradientAngle</key>
+							<real>90</real>
+							<key>GradientColor</key>
+							<dict>
+								<key>w</key>
+								<string>0.666667</string>
+							</dict>
+							<key>MiddleColor</key>
+							<dict>
+								<key>b</key>
+								<string>0.588235</string>
+								<key>g</key>
+								<string>0.917647</string>
+								<key>r</key>
+								<string>0.568627</string>
+							</dict>
+							<key>TrippleBlend</key>
+							<string>YES</string>
+						</dict>
+						<key>shadow</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>stroke</key>
+						<dict>
+							<key>Width</key>
+							<real>3</real>
+						</dict>
+					</dict>
+					<key>Text</key>
+					<dict>
+						<key>Text</key>
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 bCourses}</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{499.03436279296875, 444.93881439151949}, {79.931330472102999, 56.561256074766355}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>ID</key>
+					<integer>309</integer>
+					<key>Shape</key>
+					<string>Circle</string>
+					<key>Style</key>
+					<dict>
+						<key>fill</key>
+						<dict>
+							<key>FillType</key>
+							<integer>2</integer>
+							<key>GradientAngle</key>
+							<real>90</real>
+							<key>GradientColor</key>
+							<dict>
+								<key>w</key>
+								<string>0.666667</string>
+							</dict>
+							<key>MiddleColor</key>
+							<dict>
+								<key>b</key>
+								<string>0.588235</string>
+								<key>g</key>
+								<string>0.917647</string>
+								<key>r</key>
+								<string>0.568627</string>
+							</dict>
+							<key>TrippleBlend</key>
+							<string>YES</string>
+						</dict>
+						<key>shadow</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>stroke</key>
+						<dict>
+							<key>Pattern</key>
+							<integer>1</integer>
+							<key>Width</key>
+							<real>3</real>
+						</dict>
+					</dict>
+					<key>Text</key>
+					<dict>
+						<key>Text</key>
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\fs24 \cf0 Online Course Eval}</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{486, 314}, {106, 195.50006103515625}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>ID</key>
+					<integer>310</integer>
+					<key>Shape</key>
+					<string>Rectangle</string>
+					<key>Style</key>
+					<dict>
+						<key>fill</key>
+						<dict>
+							<key>FillType</key>
+							<integer>2</integer>
+							<key>GradientAngle</key>
+							<real>90</real>
+							<key>GradientColor</key>
+							<dict>
+								<key>w</key>
+								<string>0.666667</string>
+							</dict>
+							<key>MiddleColor</key>
+							<dict>
+								<key>b</key>
+								<string>0.588235</string>
+								<key>g</key>
+								<string>0.917647</string>
+								<key>r</key>
+								<string>0.568627</string>
+							</dict>
+							<key>TrippleBlend</key>
+							<string>YES</string>
+						</dict>
+						<key>shadow</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>stroke</key>
+						<dict>
+							<key>Width</key>
+							<real>3</real>
+						</dict>
+					</dict>
+					<key>Text</key>
+					<dict>
+						<key>Text</key>
+						<string>{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
+
+\f0\b\fs24 \cf0 Integrations
+\b0 : bash &amp; ruby scripts}</string>
+					</dict>
+					<key>TextPlacement</key>
+					<integer>0</integer>
+				</dict>
+			</array>
+			<key>ID</key>
+			<integer>307</integer>
+		</dict>
+		<dict>
 			<key>Bounds</key>
 			<string>{{16, 656.43602357482905}, {89, 44.5}}</string>
 			<key>Class</key>
@@ -195,7 +377,7 @@ Hub}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{451.5, 710}, {97, 14}}</string>
+			<string>{{409.5, 710}, {97, 14}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FitText</key>
@@ -324,8 +506,8 @@ Hub}</string>
 			<integer>262</integer>
 			<key>Points</key>
 			<array>
-				<string>{360.4895792280567, 159.31252258514016}</string>
-				<string>{393.03827020432618, 180.28727231722843}</string>
+				<string>{360.49159136206038, 159.31250970379708}</string>
+				<string>{393.03909918647707, 180.28602599717328}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -391,8 +573,8 @@ Sites}</string>
 			<integer>260</integer>
 			<key>Points</key>
 			<array>
-				<string>{377.92663875712168, 136.05358505533107}</string>
-				<string>{476.70228146785604, 168.13501029963618}</string>
+				<string>{377.92663880200519, 136.05357962055581}</string>
+				<string>{476.70228462032406, 168.13500088686817}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -424,8 +606,8 @@ Sites}</string>
 			<integer>259</integer>
 			<key>Points</key>
 			<array>
-				<string>{377.99983915356347, 102.58174030519775}</string>
-				<string>{475.00442790334, 104.00244675269981}</string>
+				<string>{377.99983921176607, 102.58162798516229}</string>
+				<string>{475.0044317258924, 104.00223360207222}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -524,8 +706,8 @@ Services}</string>
 			<integer>256</integer>
 			<key>Points</key>
 			<array>
-				<string>{377.94637436156779, 71.334112390436886}</string>
-				<string>{472.25417160684896, 45.416386757402066}</string>
+				<string>{377.94638371779064, 71.336820342801957}</string>
+				<string>{472.25622557006164, 45.420900920993802}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -1028,7 +1210,7 @@ Services}</string>
 			<integer>216</integer>
 			<key>Points</key>
 			<array>
-				<string>{501, 402.375}</string>
+				<string>{458, 619.1240234375}</string>
 				<string>{455, 360.5}</string>
 			</array>
 			<key>Style</key>
@@ -1055,7 +1237,7 @@ Services}</string>
 		</dict>
 		<dict>
 			<key>Bounds</key>
-			<string>{{463, 402.375}, {76, 44.5}}</string>
+			<string>{{420, 619.1240234375}, {76, 44.5}}</string>
 			<key>Class</key>
 			<string>ShapedGraphic</string>
 			<key>FontInfo</key>
@@ -1362,8 +1544,8 @@ requests}</string>
 			<integer>203</integer>
 			<key>Points</key>
 			<array>
-				<string>{254.04416772934616, 159.94789674436859}</string>
-				<string>{239.67008736037798, 213.05210284357645}</string>
+				<string>{254.04417674586887, 159.94789675242095}</string>
+				<string>{239.67010442161032, 213.05210314696379}</string>
 			</array>
 			<key>Style</key>
 			<dict>
@@ -2274,7 +2456,7 @@ Oracle}</string>
 			<key>Class</key>
 			<string>LineGraphic</string>
 			<key>ID</key>
-			<integer>215</integer>
+			<integer>306</integer>
 			<key>Points</key>
 			<array>
 				<string>{6, 301.5}</string>
@@ -2347,7 +2529,7 @@ Oracle}</string>
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2014-03-05 23:24:08 +0000</string>
+	<string>2014-03-10 21:50:48 +0000</string>
 	<key>Modifier</key>
 	<string>Chris Tweney</string>
 	<key>NotesVisible</key>
