@@ -3,8 +3,11 @@
 cd ~/dev/calcentral
 rm -rf log/*
 
-#unset JRUBY_OPTS
-#JVM_OPTS=${CALCENTRAL_JVM_OPTS:="\-server \-verbose:gc \-XX:+PrintGCTimeStamps \-XX:+PrintGCDetails \-XX:+UseConcMarkSweepGC \-Xms3000m \-Xmx3000m \-Xmn500m \-XX:PermSize=400m \-XX:MaxPermSize=400m"}
+RENV="$1"
+if [ -z $1 ]; then
+	RENV="development"
+fi
 
-bundle exec torquebox run -p=3000
-#--jvm-options="$JVM_OPTS"
+export JRUBY_OPTS="-Xcext.enabled=true -X-C -J-Xms3000m -J-Xmx3000m -J-Xmn500m -J-XX:PermSize=500m -J-XX:MaxPermSize=500m --headless -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -J-Xcompile.invokedynamic=false -J-XX:+UseConcMarkSweepGC"
+
+RAILS_ENV=$RENV bundle exec torquebox run -p=3000
