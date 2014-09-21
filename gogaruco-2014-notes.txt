@@ -1,0 +1,357 @@
+Golden Gate Ruby Conference Notes
+Day 1 - 19 Sept 2014
+
+Sarah @ultrasaurus - "Reasons not to use Ruby"
+test-first.org
+Smithsonian transcription tool (php/drupal)
+Why Ruby? Flexibility - test framework - software evolution
+
+Why Not Ruby? 
+  1. core of system was an existing CMS
+     Ruby CMS landscape tiny compared to Wordpress (50%) and Drupal
+     almost every year, the Ruby CMS is a different one
+  2. High-level components. Mature CMS offers a component ecosystem. 
+     More & richer than just Posts has_many :comments 
+  3. Biggest challenge is not code. Interoperability of differen systems
+     (both people & IT) a much more difficult problem. 
+
+Framework choice leads to language choice. First Rails,then Ruby, for example.
+CMS / Code ratio high at outset of project (100% CMS to start) and over time
+decreases. As time goes on more code gets written until suddenly the bulk
+of code overwhelms the CMS, after which a big rewrite resets the balance
+so the app becomes mostly code. 
+
+Frameworks are patterns for how we work. Develop-test-deploy cycle that's
+encouraged by Rails may not match up with a system where compnents are being
+swapped in. ** Component ecosystem is as important as language itself. 
+
+18fblog.tumblr.com has impl notes on notalone.gov -- uses jekyll to generate content from Markdown files edited by non-techs on github pages. 
+
+"What we don't automate we are doomed to repeat" 
+choice of language & framework determines choice of superpowers. 
+
+================
+
+Refactoring Ruby with monads - Tom Stuart
+What's a stack? Value w/certain ops: push, pop, top, empty? .. that follow 
+certain rules, e.g. stack.push(value).pop == value
+we can use the stack impl w/o knowing how it's implemented. 
+a "stack" is a specification of ops & rules. 
+another example: "collection" is specified as something that offers an #each
+method, with specific implementation up to the class. 
+
+benefits: common interface & shared functionality 
+
+stacks & collections are both abstract data types. 
+
+refactoring time!
+
+Project
+Person 
+Country
+City
+Address
+Weather
+def weather_for(project)
+	project.creator.address.country.capital.weather
+end
+
+nils at any point in the chain causes exceptions. 
+checking for them requires a long chain of local vars and specific checks. 
+
+Rails monkeypatches Object with the try method, like so:
+creator = project.try(:creator).try(:address).try(:country)....etc
+
+or you can do this in a more OO pure way by using decorator pattern,
+a new class called Optional that wraps and provides the try method:
+class Optional
+	def try(&block)
+		if value.nil?
+			...
+	end
+end
+
+optional_project = Optional.new(project)
+optional_creator = Optional.new(optional_project.try(:creator))
+
+asynchronous case:
+Eventually decorator
+Eventually
+	def and_then(&block)
+		Eventually.new do |success|
+			run do |value|
+				...
+get_github_api_urls.and_then do |urls|
+  get_org(urls).and_then do |org|
+    get_repos(org).and_then do |repos|
+	..etc.
+essentially similar to promises and deferreds
+
+Optional, Many, and Eventually are all Monads. 
+Think of a Monad as an abstract data type with some ops: 
+#and_then
+#from_value(value)
+and_then always returns an instance of the same Monad, which makes it chainable. and_then and from_value don't mess with the value. 
+
+https://github.com/tomstuart/monads
+
+=========================
+
+Short & Happy Lives of TCP and HTTP Requests
+Starr Horne @StarrHorne
+
+OSI Model of network traffic (7 layers)
+7 App
+6 Presentation
+5 Session
+4 Transport
+3 Network
+2 Data link
+1 Physical
+
+1. Wires. Time on the wire determines latency. Not the same as bandwidth. 
+Lower bound of latency is determined by speed of light. 
+NYC to London minimum time is 37ms roundtrip based on c. 
+latency kills UX:
+100ms - doesn't seem instant
+250ms - feels sluggish
+500ms - start to get distracted
+1000ms - swearing at the computer
+
+Easy way to reduce latency si moving servers closer to users. 
+
+Above 4 Mbps, adding more bandwidth doesn't decrease page load time,
+but reducing latency does continue to reduce page load time. 
+
+IP - routes packets, no guarantees
+TCP - delivery & order guarantees
+HTTP - sends files over TCP
+
+TCP overhead: SYN/ACK SYN/ACK pairs on every request
+TCP slow start - because of congestion control. 
+The first packets delivered are small, gradually increasing
+until packets get dropped. 
+Keepalive can help, at your server level (apache, nginx)
+* Disable slow start after idle setting
+* Reduce # of requests with JS/CSS concatenation
+* Keep cookie size small
+* Domain sharding (farm1.flicker, farm2.flicker, etc)
+* Move requests out of band: <link rel=prefetch> and <link rel=prerender>
+
+SPDY next-gen HTTP: much better at lots-of-small-files problem.
+Newest browsers support it. Still need CDNs for geographical closeness.
+HTTP 2 - coming soon
+
+Ilya Gregorik's book High_Performance Browser Networking - free online
+
+
+
+===================
+
+
+Building Board Games in Ruby 
+Yonatan Bergman
+github.com/yonbergman/missiles_and_microchips
+
+check out the Hashie lib - useful hash & struct extensions
+
+
+====================
+
+Giant Pile of Data
+Aja Hammerly @thagomizer_rb
+
+storage is cheap, which means clutter.
+recruiterspam.com
+
+===================
+
+John Feminella
+Why we can't have nice things
+
+Dates, Floats, and Names are Hard. Because Humans. 
+
+Representation of floats & the pigeonhole problem
+
+"False things programmers believe about names"
+
+Scunthorpe problem
+
+=================
+
+Technical Onboarding/Training
+Kate Heddleston
+@heddle317
+
+cost of losing an engineer can be up to 1.5-2X salary
+when new staff comes on, existing staff reiterates core team values
+(as important for existing team to converse with itself about practices)
+
+onboarding should be done by the recently-junior rather than the most senior
+staff, because of empathy (and increased cynicism in the senior ranks) 
+
+rotate onboarding duties to the last person who did something, to 
+prevent burnout. 
+
+Code Labs - weekly safe space for asking stupid newb questions. 
+Shadowing & Pairing. 
+
+Have weekly 1-on-1's. Without a regular comm channel, when things get 
+difficult, the onus is on people with less power to interrupt and ask for
+a meeting with those who have more power. That's not a good pattern. 
+
+==================
+
+Taking over someone else's open-source projects
+Daniel Doubrovkine @dblockdotorg
+
+Rubocop - Ruby syntax linter
+
+=============================================
+
+Day 2 - 20 Sept, 2014
+
+Reimplementing Ruby's hash
+Nathan Long
+
+Hash digest function
+You can't turn poop back into pizza (at least, not the same pizza)
+
+Big O for beginners
+hash trades wasted memory to get speed. 
+Minimizing collisions to save memory 
+vs
+Wasting memory to maximize speed/minimize collisions
+
+hash bucket = digest mod number of buckets
+growth strategy: double # of buckets, then go to the next prime
+(to avoid the next bucket size up having common factors with the old size)
+
+Object#hash and #eql? 
+
+Hash growth always causes a spike in write time to due redistribution
+
+Distributed hashes (eg Dynamo DB, Riak, Cassandra) have the same tradeoffs
+(esp around redistribution)
+
+
+==========================
+
+Vipul Amier
+Building an ORM with AReL 
+ARel = relational algebra for generating complex SQL queries on multiple
+database types
+
+AST
+Visitors
+Managers
+
+======================
+
+Sketchnoting
+Jessica Eldredge
+
+instructions for life : pay attention, be astonished, tell about it 
+(Mary Oliver)
+
+active listening
+don't let your own opinion cloud your notes; listening is different
+from thinking. 
+learn how to filter key pts. important stuff is from the speaker, not
+on the slides (which you can usually download later anyway)
+
+write down unfamiliar library/gem names
+
+write large, which forces you to slow down and print more neatly. 
+decorate last or during lulls. 
+layouts: winding from left to right, radial (title centered with concepts
+around), top-down, etc
+
+Mike Rohde Sketchnote Handbook
+
+====================
+
+Let's talk about Rust
+Yehuda Katz
+
+Safe langs: Ruby, Go, Python (garbage collected)
+Direct memory control (meaning SEGVs): C, C++
+Tradeoff: speed. 
+Rust offers direct memory control but with safety. 
+
+We're part of high-level language tribe. YAGNI w/rt better performance, for
+the most part. Although, sometimes you do:
+* when 60fps is a feature
+* memory usage requirements
+* cross-platform libs
+* whenever you read language internals to get performance
+
+In high-level langs, "I don't have to worry about it" means 
+"I can't worry about it". 
+
+"Zero Cost Abstraction" 
+
+Rust traits - decorate other code with your own impls of functions
+Sort of like monkeypatching, but scoped to a namespace (not global
+like Ruby) 
+Trait methods statically dispatched. Using traits doesn't involve
+any allocations. So it's zero-cost. 
+
+Rust allows low-level systems programming with a degree of safety not
+available to high-level languages before. 
+
+==========================
+
+Scientific Method of Troubleshooting
+Blithe Rocher, Big Nerd Ranch
+
+forget what you think you know, and question everything. 
+get rid of emotions. 
+
+==========================
+
+Let's Build a Computer!
+Ryan Davis
+@the_zenspider
+
+based on Elements of Computing Systems
+
+NAND, NOR - universal gates
+
+build not using only NAND
+build Or using deMorgan's Law: !(!a & !b)
+
+
+==========================
+
+Lightning talks
+
+Huginn - Ruby agent tool 
+
+exercism.io - web-based console to do programming exercises in various languages
+
+Geohashes - encode lat/lng pairs into a sha-like structure. 
+subdivide world into 2 parts, 0 and 1. subdivide each half, etc etc. 
+each quadrant has a unique identifier.
+
+============================
+
+Refactoring legacy code
+Randy Coulman
+
+"Gilded rose" kata 
+- leave code cleaner than when you found it. 
+
+"when you start a new programming job, walk right up to the biggest function
+in the yard, and refactor it in front of everyone"
+
+============================
+
+Golden Age of the Internet
+Pat Allan
+
+we're in a meritocracy bubble at the moment. 
+more subtle form of the aristocracy. 
+
+Chad Fowloer - blog post about need for developers to practice empathy
+
