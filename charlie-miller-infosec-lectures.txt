@@ -1,0 +1,32 @@
+17 October 2014
+Charlie Miller - Failures of Infosec
+@0xcharlie
+
+landscape of security flaws has not changed much since 2007 - same
+vulnerabilities in the same products. 
+
+don't try to defend against attack from Chinese govt - instead
+focus on preventing bored students & script kiddies from penetrating
+
+compliance <> security. having PCI cert doesn't mean anything. 
+
+fuzzer - send random data to app to discover bugs
+http://en.wikipedia.org/wiki/Fuzz_testing
+
+password change policies are worthless, they just encourage people
+to have weak or algorithmic (guessable) passwords. 
+
+============
+
+2nd talk: 100 ways to get pwned
+
+static analysis - reading code is hard so bugs can be missed
+
+dynamic analysis - e.g. fuzzing
+w/o guidance, dynamic analysis will fail in complex vulnerability
+spaces
+
+case study of fuzzing against Webkit's Javascript engine
+uncovered a "code overflow" error -- "overflow -- I like that word"
+
+
