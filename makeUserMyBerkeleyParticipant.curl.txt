@@ -1,3 +1,0 @@
-makes Chris Tweney's user record a participant:
-
-curl -F value="true" -u admin:admin http://localhost:8080/~904715/public/authprofile/myberkeley/elements/participant

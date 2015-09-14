@@ -1,4 +1,0 @@
-#!/bin/bash
-
-mvn org.apache.sling:maven-sling-plugin:install-file -Dsling.file=$1
-

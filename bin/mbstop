@@ -1,4 +1,0 @@
-#!/bin/bash
-
-mvn -o -P runner -Dsling.stop verify
-
