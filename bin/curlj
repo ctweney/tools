@@ -1,4 +1,0 @@
-#!/bin/bash
-
-curl --stderr /dev/null $@ | python -mjson.tool
-
